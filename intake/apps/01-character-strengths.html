@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Character Strengths — Prabodhini Catalyst OS</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap');
+
+  :root {
+    --saffron: #E8720C;
+    --deep: #1A1208;
+    --cream: #FAF6EE;
+    --warm: #F5EDD8;
+    --muted: #8A7B6A;
+    --border: #D4C4A8;
+    --gold: #C5930A;
+    --success: #4A7C59;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Crimson Pro', Georgia, serif;
+    background: var(--cream);
+    color: var(--deep);
+    min-height: 100vh;
+  }
+
+  .header {
+    background: var(--deep);
+    color: var(--cream);
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 3px solid var(--saffron);
+  }
+  .header-logo { font-size: 28px; }
+  .header-title { font-size: 18px; font-weight: 300; letter-spacing: 0.05em; }
+  .header-sub { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--muted); margin-top: 2px; letter-spacing: 0.1em; }
+
+  .progress-bar {
+    background: var(--warm);
+    padding: 12px 40px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .progress-track {
+    flex: 1;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--saffron), var(--gold));
+    border-radius: 2px;
+    transition: width 0.4s ease;
+  }
+  .progress-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px;
+  }
+
+  .intro-card {
+    background: var(--warm);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--saffron);
+    border-radius: 4px;
+    padding: 32px;
+    margin-bottom: 40px;
+  }
+  .intro-card h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--deep);
+  }
+  .intro-card p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--muted);
+  }
+  .jp-verse {
+    font-style: italic;
+    font-size: 15px;
+    color: var(--gold);
+    margin-top: 16px;
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+  }
+
+  .question-block {
+    margin-bottom: 40px;
+    animation: fadeUp 0.4s ease both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .q-number {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+  .q-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--deep);
+    margin-bottom: 20px;
+  }
+  .q-strength-tag {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    background: var(--deep);
+    color: var(--saffron);
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+    letter-spacing: 0.08em;
+  }
+
+  .scale {
+    display: flex;
+    gap: 8px;
+    align-items: stretch;
+  }
+  .scale-label {
+    font-size: 12px;
+    color: var(--muted);
+    writing-mode: unset;
+    text-align: center;
+    flex: 1;
+  }
+  .scale-options {
+    display: flex;
+    gap: 6px;
+    flex: 1;
+    justify-content: space-between;
+  }
+  .scale-btn {
+    flex: 1;
+    aspect-ratio: 1;
+    border: 2px solid var(--border);
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'DM Mono', monospace;
+    font-size: 14px;
+    color: var(--muted);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+  }
+  .scale-btn:hover { border-color: var(--saffron); color: var(--saffron); }
+  .scale-btn.selected { border-color: var(--saffron); background: var(--saffron); color: white; font-weight: bold; }
+
+  .scale-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .nav-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 48px;
+  }
+  .btn {
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-family: 'Crimson Pro', serif;
+    font-size: 17px;
+    cursor: pointer;
+    border: 2px solid;
+    transition: all 0.2s;
+  }
+  .btn-primary { background: var(--saffron); color: white; border-color: var(--saffron); }
+  .btn-primary:hover { background: #C5620A; border-color: #C5620A; }
+  .btn-secondary { background: transparent; color: var(--deep); border-color: var(--border); }
+  .btn-secondary:hover { border-color: var(--deep); }
+
+  /* Results */
+  .results-section { display: none; }
+  .results-section.visible { display: block; }
+
+  .strength-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 24px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .strength-rank {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: 'DM Mono', monospace;
+    font-size: 28px;
+    color: var(--border);
+    font-weight: bold;
+  }
+  .strength-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--deep);
+    margin-bottom: 4px;
+  }
+  .strength-virtue {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--saffron);
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+  }
+  .strength-desc { font-size: 16px; color: var(--muted); line-height: 1.6; }
+  .strength-jp {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    font-style: italic;
+    font-size: 15px;
+    color: var(--gold);
+  }
+  .strength-bar {
+    height: 3px;
+    background: var(--border);
+    border-radius: 2px;
+    margin-top: 16px;
+    overflow: hidden;
+  }
+  .strength-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--saffron), var(--gold));
+    border-radius: 2px;
+    transition: width 1s ease 0.3s;
+  }
+
+  .results-header {
+    background: var(--deep);
+    color: var(--cream);
+    padding: 32px;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .results-header h2 { font-size: 32px; margin-bottom: 8px; }
+  .results-header p { color: var(--muted); font-size: 17px; }
+
+  .export-section {
+    background: var(--warm);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 24px;
+    margin-top: 32px;
+  }
+  .export-section h3 { font-size: 20px; margin-bottom: 12px; }
+  .export-box {
+    background: var(--deep);
+    color: var(--cream);
+    padding: 20px;
+    border-radius: 4px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    margin: 16px 0;
+  }
+  .copy-btn {
+    background: var(--saffron);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Crimson Pro', serif;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-logo">🔥</div>
+  <div>
+    <div class="header-title">Prabodhini Catalyst OS — Psychometric Suite</div>
+    <div class="header-sub">TEST 1 OF 3 · CHARACTER STRENGTHS ASSESSMENT · VIA-ADAPTED</div>
+  </div>
+</div>
+
+<div class="progress-bar">
+  <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+  <div class="progress-label" id="progressLabel">Question 1 of 30</div>
+</div>
+
+<div class="main">
+
+  <!-- INTRO -->
+  <div class="intro-card" id="introCard">
+    <h2>Know Your Svabhava</h2>
+    <p>This assessment identifies your top character strengths — what JP called your <em>Svabhava</em>, your natural disposition. These are the qualities most energising to express, most authentic to who you are.</p>
+    <p style="margin-top:12px">Rate each statement from 1 (not like me at all) to 5 (very much like me). There are no right or wrong answers. Answer as you <em>are</em>, not as you wish to be.</p>
+    <div class="jp-verse">"Gunavikas — the development of qualities — begins with knowing which qualities are already alive in you." — JP pedagogy</div>
+    <div style="margin-top:20px">
+      <button class="btn btn-primary" onclick="startAssessment()">Begin Assessment →</button>
+    </div>
+  </div>
+
+  <!-- QUESTIONS -->
+  <div id="questionSection" style="display:none">
+    <div id="questionContainer"></div>
+    <div class="nav-row">
+      <button class="btn btn-secondary" id="prevBtn" onclick="prevQuestion()">← Previous</button>
+      <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">Next →</button>
+    </div>
+  </div>
+
+  <!-- RESULTS -->
+  <div class="results-section" id="resultsSection">
+    <div class="results-header">
+      <h2>Your Signature Strengths</h2>
+      <p>Your top character strengths — the foundation of your Svadharma</p>
+    </div>
+    <div id="strengthsList"></div>
+    <div class="export-section">
+      <h3>Save to Profile</h3>
+      <p style="color:var(--muted); font-size:15px; margin-bottom:12px">Copy this block and append it to your <code>profiles/[name]-intake.md</code> file.</p>
+      <div class="export-box" id="exportBox"></div>
+      <button class="copy-btn" onclick="copyResults()">Copy to Clipboard</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const STRENGTHS = [
+  { id:'creativity', virtue:'Wisdom', name:'Creativity & Originality', desc:'You think of novel and productive ways to conceptualize and do things.', jp:'The SPG innovator; the one who brings fresh approaches to old problems.' },
+  { id:'curiosity', virtue:'Wisdom', name:'Curiosity & Wonder', desc:'You find all topics and subjects fascinating. You like exploration and discovery.', jp:'The Svadhyaya seeker; the one who learns for its own sake, not for credentials.' },
+  { id:'judgment', virtue:'Wisdom', name:'Judgment & Critical Thinking', desc:'Thinking things through and examining them from all sides. Weighing evidence fairly.', jp:'The Viveka holder; JP\'s scientific temper in human form.' },
+  { id:'love_learning', virtue:'Wisdom', name:'Love of Learning', desc:'You love mastering new skills, topics, and bodies of knowledge.', jp:'The one who never stops growing; Vivekananda\'s ideal of continuous self-development.' },
+  { id:'perspective', virtue:'Wisdom', name:'Perspective & Wisdom', desc:'Although you may not think of yourself as wise, your friends hold this view.', jp:'The elder quality; Sthitaprajna in formation.' },
+  { id:'bravery', virtue:'Courage', name:'Bravery & Valor', desc:'You do not shrink from threat, challenge, difficulty, or pain.', jp:'Abhayam — Vivekananda\'s call: "Be fearless." The quality JP camps tested under pressure.' },
+  { id:'perseverance', virtue:'Courage', name:'Perseverance & Industry', desc:'You finish what you start. You persist in a course of action despite obstacles.', jp:'Nishkama Karma in long form — sustained effort with non-attachment to immediate reward.' },
+  { id:'honesty', virtue:'Courage', name:'Honesty & Authenticity', desc:'You speak the truth but more than that you live your life in a genuine and authentic way.', jp:'Satyam — the first practice in all Indian philosophical traditions.' },
+  { id:'zest', virtue:'Courage', name:'Zest & Enthusiasm', desc:'You approach everything you do with excitement and energy. You never do anything halfway.', jp:'Ramdas\'s Mana Kara Re Prasanna — cheerfulness as a discipline, not just a mood.' },
+  { id:'love', virtue:'Humanity', name:'Love & Care', desc:'You value close relations with others. You feel close to people.', jp:'The Sangha builder; the quality that sustains communities and movements.' },
+  { id:'kindness', virtue:'Humanity', name:'Kindness & Generosity', desc:'You are kind and generous to others, and you are never too busy to do a favor.', jp:'Seva Bhava — the service orientation that JP made central to leadership.' },
+  { id:'social_intelligence', virtue:'Humanity', name:'Social & Emotional Intelligence', desc:'You are aware of the motives and feelings of other people and yourself.', jp:'The adaptive leader quality; reading people accurately — a Paristhiti Jnana skill.' },
+  { id:'teamwork', virtue:'Justice', name:'Teamwork & Citizenship', desc:'You work well as a member of a group or team. You are loyal.', jp:'Sahakar — cooperative spirit, one of the five OA components.' },
+  { id:'fairness', virtue:'Justice', name:'Fairness & Equity', desc:'Treating all people fairly is one of your abiding principles.', jp:'The just leader; the one who applies Dharma without favoritism.' },
+  { id:'leadership_str', virtue:'Justice', name:'Leadership', desc:'You excel at the tasks of leadership: encouraging groups to get things done.', jp:'Sanghatan — the fifth OA component; the capacity to build and sustain.' },
+  { id:'forgiveness', virtue:'Temperance', name:'Forgiveness & Mercy', desc:'You forgive those who have done you wrong. You accept people\'s shortcomings.', jp:'The Sthitaprajna quality — not consumed by grievance; moving forward.' },
+  { id:'humility', virtue:'Temperance', name:'Humility & Modesty', desc:'You do not seek the spotlight, preferring to let your accomplishments speak for themselves.', jp:'The JP tradition of anonymous service — some tasks done without revealing identity.' },
+  { id:'prudence', virtue:'Temperance', name:'Prudence & Discretion', desc:'You are a careful person, and your choices are consistently prudent ones.', jp:'Anushasan — disciplined judgment; not every thought needs to be acted on.' },
+  { id:'self_regulation', virtue:'Temperance', name:'Self-Regulation & Control', desc:'You regulate what you feel and what you do. You are a disciplined person.', jp:'Sva-anushasan — the self-governance that JP made the foundation of all leadership.' },
+  { id:'beauty', virtue:'Transcendence', name:'Appreciation of Beauty', desc:'You notice and appreciate beauty, excellence, and skilled performance in all domains.', jp:'The one who finds Ananda — the bliss at the heart of all great work.' },
+  { id:'gratitude', virtue:'Transcendence', name:'Gratitude', desc:'You are aware of the good things that happen to you and never take them for granted.', jp:'Kritagnyata — the JP alumnus who honors the gift of formation received.' },
+  { id:'hope', virtue:'Transcendence', name:'Hope & Optimism', desc:'You expect the best in the future, and you work to achieve it.', jp:'Sraddha — self-trust rooted in the infinite. Vivekananda\'s central call.' },
+  { id:'humor', virtue:'Transcendence', name:'Humor & Playfulness', desc:'You like to laugh and tease. Bringing smiles to others is important to you.', jp:'The quality that sustains long movements — joy is not an obstacle to seriousness.' },
+  { id:'spirituality', virtue:'Transcendence', name:'Spirituality & Purpose', desc:'You have strong and coherent beliefs about the higher purpose and meaning of the universe.', jp:'The Advaita root — the deepest foundation on which all JP formation rests.' },
+];
+
+const QUESTIONS = [
+  { strength:'creativity', text:'I often think of new ways to approach problems that others haven\'t considered.' },
+  { strength:'curiosity', text:'I find almost everything interesting and am easily drawn into exploring new topics.' },
+  { strength:'judgment', text:'I examine all sides of an issue before forming an opinion and resist pressure to decide quickly.' },
+  { strength:'love_learning', text:'I actively seek opportunities to learn new things, even when not required to.' },
+  { strength:'perspective', text:'Friends seek my advice because they feel I understand situations from multiple angles.' },
+  { strength:'bravery', text:'I speak up and take action even when it is uncomfortable or I might face criticism.' },
+  { strength:'perseverance', text:'I follow through on commitments even when obstacles arise or motivation fades.' },
+  { strength:'honesty', text:'I present myself authentically — I don\'t pretend to be someone I\'m not, even when it costs me.' },
+  { strength:'zest', text:'I bring energy and enthusiasm to almost everything I do; I rarely feel bored.' },
+  { strength:'love', text:'I am able to be fully present and vulnerable with the people I am closest to.' },
+  { strength:'kindness', text:'I genuinely enjoy helping others, even when there is no personal benefit to me.' },
+  { strength:'social_intelligence', text:'I can read what people need emotionally in a situation, even when they don\'t say it.' },
+  { strength:'teamwork', text:'I am most energised when contributing to a shared goal rather than working alone.' },
+  { strength:'fairness', text:'I consistently apply the same standards to everyone, regardless of whether I like them.' },
+  { strength:'leadership_str', text:'I naturally take charge in group situations and help others coordinate toward a goal.' },
+  { strength:'forgiveness', text:'I am able to genuinely let go of grudges; I don\'t allow past wrongs to define my relationships.' },
+  { strength:'humility', text:'I prefer that my work speaks for itself rather than promoting my achievements to others.' },
+  { strength:'prudence', text:'I think carefully before committing — I consider consequences others might overlook.' },
+  { strength:'self_regulation', text:'I maintain my disciplines (practice, diet, commitments) even when I don\'t feel like it.' },
+  { strength:'beauty', text:'I am regularly moved by beauty — in art, nature, music, mathematics, or skilled craftsmanship.' },
+  { strength:'gratitude', text:'I regularly feel a deep sense of appreciation for what I have received in life.' },
+  { strength:'hope', text:'Even in difficult circumstances, I maintain a genuine belief that things will work out well.' },
+  { strength:'humor', text:'I use humor naturally and often; it brings lightness without diminishing seriousness.' },
+  { strength:'spirituality', text:'I have a clear sense of a higher purpose that guides my major life decisions.' },
+  { strength:'creativity', text:'When I get stuck, I enjoy the challenge of finding an unconventional solution.' },
+  { strength:'curiosity', text:'I read widely and pursue interests that don\'t directly relate to my work, just because they fascinate me.' },
+  { strength:'perseverance', text:'I am known for finishing projects that others have given up on.' },
+  { strength:'self_regulation', text:'I can delay immediate gratification when I know it serves a longer-term goal.' },
+  { strength:'leadership_str', text:'When a group is confused about direction, I naturally step in to create clarity.' },
+  { strength:'spirituality', text:'My spiritual practice or inner life genuinely shapes how I make decisions in the world.' },
+];
+
+let currentQ = 0;
+let answers = {};
+
+function startAssessment() {
+  document.getElementById('introCard').style.display = 'none';
+  document.getElementById('questionSection').style.display = 'block';
+  renderQuestion();
+}
+
+function renderQuestion() {
+  const q = QUESTIONS[currentQ];
+  const progress = ((currentQ) / QUESTIONS.length) * 100;
+  document.getElementById('progressFill').style.width = progress + '%';
+  document.getElementById('progressLabel').textContent = `Question ${currentQ+1} of ${QUESTIONS.length}`;
+  document.getElementById('prevBtn').style.display = currentQ === 0 ? 'none' : 'block';
+  document.getElementById('nextBtn').textContent = currentQ === QUESTIONS.length - 1 ? 'See Results →' : 'Next →';
+  
+  const selected = answers[currentQ];
+  document.getElementById('questionContainer').innerHTML = `
+    <div class="question-block">
+      <div class="q-number">QUESTION ${currentQ + 1} / ${QUESTIONS.length}</div>
+      <div class="q-strength-tag">${STRENGTHS.find(s=>s.id===q.strength)?.virtue?.toUpperCase() || ''}</div>
+      <div class="q-text">"${q.text}"</div>
+      <div class="scale">
+        <div class="scale-options">
+          ${[1,2,3,4,5].map(v=>`<button class="scale-btn ${selected===v?'selected':''}" onclick="selectAnswer(${v})">${v}</button>`).join('')}
+        </div>
+      </div>
+      <div class="scale-labels">
+        <span>Not like me at all</span>
+        <span>Very much like me</span>
+      </div>
+    </div>
+  `;
+}
+
+function selectAnswer(val) {
+  answers[currentQ] = val;
+  renderQuestion();
+}
+
+function nextQuestion() {
+  if (answers[currentQ] === undefined) {
+    alert('Please select a response before continuing.');
+    return;
+  }
+  if (currentQ < QUESTIONS.length - 1) {
+    currentQ++;
+    renderQuestion();
+  } else {
+    showResults();
+  }
+}
+
+function prevQuestion() {
+  if (currentQ > 0) { currentQ--; renderQuestion(); }
+}
+
+function showResults() {
+  document.getElementById('questionSection').style.display = 'none';
+  document.getElementById('progressFill').style.width = '100%';
+  document.getElementById('progressLabel').textContent = 'Complete!';
+  
+  // Aggregate scores per strength
+  const scores = {};
+  STRENGTHS.forEach(s => { scores[s.id] = 0; });
+  QUESTIONS.forEach((q, i) => {
+    if (answers[i]) scores[q.strength] = (scores[q.strength] || 0) + answers[i];
+  });
+  
+  // Count questions per strength for normalisation
+  const counts = {};
+  QUESTIONS.forEach(q => { counts[q.strength] = (counts[q.strength]||0)+1; });
+  
+  // Normalise to 100
+  const normalized = STRENGTHS.map(s => ({
+    ...s,
+    score: Math.round((scores[s.id]||0) / ((counts[s.id]||1) * 5) * 100)
+  })).sort((a,b) => b.score - a.score);
+  
+  const top5 = normalized.slice(0, 5);
+  
+  const html = top5.map((s, i) => `
+    <div class="strength-card">
+      <div class="strength-rank">#${i+1}</div>
+      <div class="strength-name">${s.name}</div>
+      <div class="strength-virtue">${s.virtue.toUpperCase()}</div>
+      <div class="strength-desc">${s.desc}</div>
+      <div class="strength-jp">${s.jp}</div>
+      <div class="strength-bar"><div class="strength-fill" style="width:0%" data-width="${s.score}%"></div></div>
+    </div>
+  `).join('');
+  
+  document.getElementById('strengthsList').innerHTML = html;
+  document.getElementById('resultsSection').classList.add('visible');
+  
+  // Animate bars
+  setTimeout(() => {
+    document.querySelectorAll('.strength-fill').forEach(el => {
+      el.style.width = el.dataset.width;
+    });
+  }, 100);
+  
+  // Export
+  const date = new Date().toISOString().split('T')[0];
+  const exportText = `## VIA Character Strengths Results
+Date: ${date}
+
+### Top 5 Signature Strengths:
+${top5.map((s,i) => `${i+1}. **${s.name}** (${s.virtue}) — Score: ${s.score}%\n   JP Alignment: ${s.jp}`).join('\n')}
+
+### Full Ranking:
+${normalized.map((s,i) => `${i+1}. ${s.name}: ${s.score}%`).join('\n')}
+
+### Coaching Implications:
+- Primary Svabhava Expression: ${top5[0].name}
+- Core Virtue Cluster: ${[...new Set(top5.map(s=>s.virtue))].join(', ')}
+- SPG Strength Profile: ${top5.slice(0,3).map(s=>s.name).join(' + ')}`;
+  
+  document.getElementById('exportBox').textContent = exportText;
+}
+
+function copyResults() {
+  navigator.clipboard.writeText(document.getElementById('exportBox').textContent);
+  const btn = document.querySelector('.copy-btn');
+  btn.textContent = 'Copied! ✓';
+  setTimeout(() => btn.textContent = 'Copy to Clipboard', 2000);
+}
+</script>
+</body>
+</html>

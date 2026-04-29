@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leadership & OA Profile — Prabodhini Catalyst OS</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&family=DM+Mono:wght@300;400&display=swap');
+  :root {
+    --saffron:#E8720C; --deep:#1A1208; --cream:#FAF6EE; --warm:#F5EDD8;
+    --muted:#8A7B6A; --border:#D4C4A8; --gold:#C5930A;
+    --lakshya:#E74C3C; --anu:#3498DB; --saha:#27AE60; --seva:#8E44AD; --sang:#E67E22;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Crimson Pro',Georgia,serif; background:var(--cream); color:var(--deep); }
+  .header { background:var(--deep); color:var(--cream); padding:20px 40px; display:flex; align-items:center; gap:16px; border-bottom:3px solid var(--saffron); }
+  .header-title { font-size:17px; font-weight:300; letter-spacing:.05em; }
+  .header-sub { font-family:'DM Mono',monospace; font-size:11px; color:var(--muted); margin-top:2px; }
+  .progress-bar { background:var(--warm); padding:12px 40px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:16px; }
+  .progress-track { flex:1; height:4px; background:var(--border); border-radius:2px; overflow:hidden; }
+  .progress-fill { height:100%; background:linear-gradient(90deg,var(--saffron),var(--gold)); border-radius:2px; transition:width .4s; }
+  .progress-label { font-family:'DM Mono',monospace; font-size:11px; color:var(--muted); }
+  .main { max-width:760px; margin:0 auto; padding:40px 24px; }
+  .section-intro { background:var(--warm); border:1px solid var(--border); border-left:4px solid var(--saffron); border-radius:4px; padding:24px; margin-bottom:32px; }
+  .section-intro h2 { font-size:24px; margin-bottom:8px; }
+  .section-intro p { font-size:16px; color:var(--muted); line-height:1.6; }
+  .section-intro .jp-tag { font-family:'DM Mono',monospace; font-size:11px; color:var(--saffron); letter-spacing:.1em; margin-top:8px; }
+  .q-item { margin-bottom:24px; padding:20px; background:white; border:1px solid var(--border); border-radius:6px; }
+  .q-text { font-size:17px; line-height:1.5; margin-bottom:14px; }
+  .q-tag { font-family:'DM Mono',monospace; font-size:10px; padding:2px 8px; border-radius:2px; color:white; display:inline-block; margin-bottom:10px; }
+  .likert { display:flex; gap:6px; }
+  .likert-btn { flex:1; padding:10px 4px; border:2px solid var(--border); background:white; border-radius:4px; cursor:pointer; font-family:'DM Mono',monospace; font-size:13px; color:var(--muted); text-align:center; transition:all .2s; }
+  .likert-btn:hover { border-color:var(--saffron); }
+  .likert-btn.sel { background:var(--saffron); color:white; border-color:var(--saffron); }
+  .likert-labels { display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-top:6px; font-style:italic; }
+  .nav-row { display:flex; gap:12px; margin-top:32px; }
+  .btn { padding:12px 28px; border-radius:4px; font-family:'Crimson Pro',serif; font-size:17px; cursor:pointer; border:2px solid; transition:all .2s; }
+  .btn-primary { background:var(--saffron); color:white; border-color:var(--saffron); }
+  .btn-secondary { background:transparent; color:var(--deep); border-color:var(--border); }
+
+  /* Results */
+  #resultsSection { display:none; max-width:760px; margin:0 auto; padding:40px 24px; }
+  .results-header { background:var(--deep); color:var(--cream); padding:32px; border-radius:6px; margin-bottom:24px; text-align:center; }
+  .results-header h2 { font-size:30px; margin-bottom:8px; }
+  .results-header p { color:var(--muted); }
+  .oa-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:24px 0; }
+  @media(max-width:600px) { .oa-grid { grid-template-columns:1fr; } }
+  .oa-card { background:white; border:1px solid var(--border); border-radius:6px; padding:20px; border-top:4px solid; }
+  .oa-score { font-size:40px; font-family:'DM Mono',monospace; font-weight:bold; }
+  .oa-name { font-size:18px; font-weight:600; margin:4px 0; }
+  .oa-skt { font-family:'DM Mono',monospace; font-size:11px; color:var(--muted); margin-bottom:8px; letter-spacing:.06em; }
+  .oa-bar { height:4px; background:var(--border); border-radius:2px; margin:10px 0; overflow:hidden; }
+  .oa-fill { height:100%; border-radius:2px; transition:width 1s ease .3s; }
+  .oa-insight { font-size:14px; color:var(--muted); line-height:1.5; font-style:italic; }
+  .saboteur-section { background:var(--warm); border:1px solid var(--border); border-radius:6px; padding:24px; margin:24px 0; }
+  .saboteur-title { font-size:22px; font-weight:600; margin-bottom:8px; }
+  .saboteur-sub { font-size:15px; color:var(--muted); font-style:italic; margin-bottom:12px; }
+  .saboteur-tag { display:inline-block; background:var(--deep); color:var(--saffron); font-family:'DM Mono',monospace; font-size:12px; padding:4px 12px; border-radius:3px; margin-bottom:12px; }
+  .saboteur-desc { font-size:16px; line-height:1.7; }
+  .saboteur-antidote { margin-top:12px; padding:12px; background:white; border-radius:4px; border-left:3px solid var(--gold); font-style:italic; font-size:15px; }
+  .export-section { background:var(--warm); border:1px solid var(--border); border-radius:6px; padding:24px; margin-top:24px; }
+  .export-box { background:var(--deep); color:var(--cream); padding:20px; border-radius:4px; font-family:'DM Mono',monospace; font-size:11px; line-height:1.8; white-space:pre-wrap; margin:16px 0; }
+  .copy-btn { background:var(--saffron); color:white; border:none; padding:10px 20px; border-radius:4px; cursor:pointer; font-family:'Crimson Pro',serif; font-size:16px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <div>
+    <div class="header-title">Prabodhini Catalyst OS — Psychometric Suite</div>
+    <div class="header-sub">TEST 3 OF 3 · ORGANIZATIONAL ATTITUDE & LEADERSHIP PROFILE</div>
+  </div>
+</div>
+<div class="progress-bar">
+  <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+  <div class="progress-label" id="progressLabel">Section 1 of 3</div>
+</div>
+
+<div class="main" id="mainSection">
+  <div id="sectionContent"></div>
+  <div class="nav-row">
+    <button class="btn btn-secondary" id="prevBtn" onclick="prevSection()" style="display:none">← Previous</button>
+    <button class="btn btn-primary" id="nextBtn" onclick="nextSection()">Next →</button>
+  </div>
+</div>
+
+<div id="resultsSection">
+  <div class="results-header">
+    <h2>Your Leadership & OA Profile</h2>
+    <p>Vivekananda's Organizational Attitude + Adaptive Leadership + Inner Saboteur Map</p>
+  </div>
+  <div class="oa-grid" id="oaGrid"></div>
+  <div class="saboteur-section" id="saboteurSection"></div>
+  <div class="export-section">
+    <h3 style="font-size:20px; margin-bottom:12px">Save to Profile</h3>
+    <div class="export-box" id="exportBox"></div>
+    <button class="copy-btn" onclick="copyResults()">Copy to Clipboard</button>
+  </div>
+</div>
+
+<script>
+const OA_COMPONENTS = [
+  { id:'lakshya', name:'Lakshya Nishtha', skt:'Goal Commitment', color:'#E74C3C', icon:'🎯',
+    low:'Your commitment to stated goals tends to be revised when circumstances become difficult. This is normal but worth examining.',
+    mid:'You hold goals with reasonable commitment but sometimes need external accountability to sustain them.',
+    high:'You demonstrate exceptional clarity and unwavering commitment to chosen goals — a foundational OA strength.' },
+  { id:'anushasan', name:'Anushasan', skt:'Self-Discipline', color:'#3498DB', icon:'⚡',
+    low:'Self-discipline is not yet a consistent strength. Building structural habits would help considerably.',
+    mid:'Discipline is present but situationally dependent — strong when motivated, weaker when not.',
+    high:'Your self-governance is a genuine asset. You maintain standards independent of mood or external pressure.' },
+  { id:'sahakar', name:'Sahakar', skt:'Cooperative Spirit', color:'#27AE60', icon:'🤝',
+    low:'True collaboration — where others\' leadership is genuinely welcomed — is an edge to develop.',
+    mid:'You cooperate well but may subtly resist when others\' approach differs significantly from yours.',
+    high:'You build genuine collective intelligence. Other strong people are resources, not threats, to you.' },
+  { id:'seva_bhava', name:'Seva Bhava', skt:'Service Orientation', color:'#8E44AD', icon:'🙏',
+    low:'Service orientation may be overridden by personal agenda in stress situations. Worth examining the pattern.',
+    mid:'You serve genuinely but occasionally lose the beneficiary focus when under pressure.',
+    high:'Service as motivation is authentic and consistent — even when recognition is absent.' },
+  { id:'sanghatan', name:'Sanghatan', skt:'Institution-Building', color:'#E67E22', icon:'🏛️',
+    low:'Building structures that outlast you is the primary development edge. The tendency is to do, not to institutionalise.',
+    mid:'Some institutional thinking is present but the full architecture of durable organizations hasn\'t yet developed.',
+    high:'You build for permanence. The organizations and systems you create survive your personal involvement.' },
+];
+
+const SABOTEURS = [
+  { id:'judge', name:'The Judge', desc:'You hold yourself and others to exacting standards, and the inner critic is relentless when those standards aren\'t met. High achievement often co-exists with persistent self-doubt.', antidote:'The Sthitaprajna antidote: witness the Judge with curiosity, not agreement. "I notice the Judge is speaking. What is it protecting?" — then respond from the Sage.' },
+  { id:'hyper_achiever', name:'The Hyper-Achiever', desc:'Your sense of worth is closely tied to what you accomplish. Rest feels earned only after sufficient output. The mission and the self become dangerously identified.', antidote:'The Nishkama Karma antidote: practise doing something purely for its own sake, not for output. Let your being be enough, independent of your doing.' },
+  { id:'controller', name:'The Controller', desc:'Anxiety-driven need to control situations and people. Difficulty trusting others with important work. Often the smartest person in the room who can\'t let the room lead itself.', antidote:'The OA antidote: genuine Sahakar requires releasing control. Practise deliberately giving away work you want to keep, and witnessing the result with curiosity, not judgment.' },
+  { id:'avoider', name:'The Avoider', desc:'Important but uncomfortable conversations, decisions, or risks are systematically postponed. The avoidance is so skillful it masquerades as patience or politeness.', antidote:'The Bravery antidote: schedule the difficult conversation this week. Bravery is not the absence of fear — it is the decision to act despite it.' },
+  { id:'rationalist', name:'The Hyper-Rationalist', desc:'Emotional dimensions of situations are systematically under-weighted. Others experience you as brilliant but occasionally cold. Relationships suffer from the absence of felt understanding.', antidote:'The Sangha antidote: in your next important conversation, ask one more question before offering your analysis. "How are you feeling about this?" — and wait for the full answer.' },
+];
+
+const SECTIONS = [
+  {
+    title: 'Organizational Attitude — Part 1',
+    intro: 'Vivekananda identified Organizational Attitude as the key to India\'s resurgence. These questions assess five components JP built into its leadership formation.',
+    jpTag: 'VIVEKANANDA · OA FRAMEWORK · FIVE COMPONENTS',
+    questions: [
+      { id:'lakshya_1', oa:'lakshya', text:'When I set a goal, I maintain commitment to it even when circumstances make it difficult or inconvenient.' },
+      { id:'lakshya_2', oa:'lakshya', text:'I can articulate precisely what I am trying to achieve in the next 90 days across my most important commitments.' },
+      { id:'lakshya_3', oa:'lakshya', text:'I do not revise my core goals when I meet resistance — I revise my approach instead.' },
+      { id:'anu_1', oa:'anushasan', text:'I maintain my key disciplines (practice, exercise, commitments) consistently, without requiring external motivation.' },
+      { id:'anu_2', oa:'anushasan', text:'My behaviour when no one is watching reflects the same standards as when I am being observed.' },
+      { id:'anu_3', oa:'anushasan', text:'I am reliably on time, follow through on promises, and complete what I start.' },
+      { id:'saha_1', oa:'sahakar', text:'When someone on my team has a better idea than mine, I genuinely champion their idea over my own.' },
+      { id:'saha_2', oa:'sahakar', text:'I find it easy to work under the leadership of another capable person, even when I think differently.' },
+      { id:'seva_1', oa:'seva_bhava', text:'The primary motivation for my professional and social work is to genuinely serve others, not to build my reputation.' },
+      { id:'seva_2', oa:'seva_bhava', text:'When my interests conflict with those I serve, I consistently choose in favour of those I serve.' },
+    ]
+  },
+  {
+    title: 'Organizational Attitude — Part 2 & Adaptive Leadership',
+    intro: 'Institution-building and the capacity to distinguish technical from adaptive challenges — the hallmarks of a mature Prabodhini leader.',
+    jpTag: 'SANGHATAN · HEIFETZ ADAPTIVE LEADERSHIP',
+    questions: [
+      { id:'sang_1', oa:'sanghatan', text:'I actively build systems, processes, and people so that my initiatives continue without my daily involvement.' },
+      { id:'sang_2', oa:'sanghatan', text:'I invest significant time in developing other leaders — not just executing good work myself.' },
+      { id:'sang_3', oa:'sanghatan', text:'The organizations or initiatives I have built have outlasted my direct leadership of them.' },
+      { id:'adapt_1', oa:'sanghatan', text:'I can distinguish when a challenge requires expertise (technical) vs. a change in values or behaviour (adaptive).' },
+      { id:'saha_3', oa:'sahakar', text:'My team\'s collective decision-making is better than my individual decision-making — I have created that condition.' },
+      { id:'anu_4', oa:'anushasan', text:'I hold myself accountable to outcomes, not just effort — I own results, not just process.' },
+      { id:'lakshya_4', oa:'lakshya', text:'My team or closest collaborators can clearly state our shared goal in their own words.' },
+      { id:'seva_3', oa:'seva_bhava', text:'Even when I disagree with a decision, I implement it fully or exit — I do not undermine while complying.' },
+    ]
+  },
+  {
+    title: 'Inner State & Saboteur Profile',
+    intro: 'High-achieving leaders often carry inner patterns that undermine their effectiveness and wellbeing despite their best intentions. This section maps the primary Saboteur active in your leadership.',
+    jpTag: 'STHITAPRAJNA ASSESSMENT · PQ FRAMEWORK',
+    questions: [
+      { id:'judge_1', sab:'judge', text:'I frequently critique myself harshly when I make mistakes or fall short of my standards.' },
+      { id:'judge_2', sab:'judge', text:'I find it difficult to feel genuinely satisfied with my performance — there\'s always something that could have been better.' },
+      { id:'ha_1', sab:'hyper_achiever', text:'I feel most at peace with myself when I am being productive; rest that isn\'t "earned" makes me uncomfortable.' },
+      { id:'ha_2', sab:'hyper_achiever', text:'My identity is closely tied to what I achieve — removing my accomplishments would significantly shake my sense of self.' },
+      { id:'ctrl_1', sab:'controller', text:'I find it genuinely difficult to delegate important work — I worry the quality will not meet my standards.' },
+      { id:'ctrl_2', sab:'controller', text:'I often redo or significantly adjust work others have done, rather than accepting a different approach.' },
+      { id:'avo_1', sab:'avoider', text:'There are important conversations I have been avoiding for more than one month.' },
+      { id:'avo_2', sab:'avoider', text:'When faced with an uncomfortable decision, I often find valid reasons to delay it.' },
+      { id:'rat_1', sab:'rationalist', text:'I tend to analyse situations primarily intellectually, and emotions (mine or others\') feel somewhat uncomfortable to engage with directly.' },
+      { id:'rat_2', sab:'rationalist', text:'People sometimes describe me as hard to read emotionally, or note that I seem more comfortable with ideas than feelings.' },
+    ]
+  }
+];
+
+let currentSection = 0;
+let allAnswers = {};
+
+function renderSection() {
+  const s = SECTIONS[currentSection];
+  const progress = (currentSection / SECTIONS.length) * 100;
+  document.getElementById('progressFill').style.width = progress + '%';
+  document.getElementById('progressLabel').textContent = `Section ${currentSection+1} of ${SECTIONS.length}: ${s.title}`;
+  document.getElementById('prevBtn').style.display = currentSection === 0 ? 'none' : 'block';
+  document.getElementById('nextBtn').textContent = currentSection === SECTIONS.length-1 ? 'See My Profile →' : 'Next Section →';
+
+  document.getElementById('sectionContent').innerHTML = `
+    <div class="section-intro">
+      <h2>${s.title}</h2>
+      <p>${s.intro}</p>
+      <div class="jp-tag">${s.jpTag}</div>
+    </div>
+    ${s.questions.map((q,i) => {
+      const color = q.oa ? OA_COMPONENTS.find(o=>o.id===q.oa)?.color : '#8A7B6A';
+      const tag = q.oa ? OA_COMPONENTS.find(o=>o.id===q.oa)?.name : SABOTEURS.find(sb=>sb.id===q.sab)?.name;
+      return `
+      <div class="q-item">
+        <span class="q-tag" style="background:${color}">${tag}</span>
+        <div class="q-text">${q.text}</div>
+        <div class="likert">
+          ${[1,2,3,4,5].map(v=>`<button class="likert-btn ${allAnswers[q.id]===v?'sel':''}" onclick="selectA('${q.id}',${v})">${v}</button>`).join('')}
+        </div>
+        <div class="likert-labels"><span>Not like me</span><span>Very like me</span></div>
+      </div>`;
+    }).join('')}
+  `;
+  window.scrollTo(0,0);
+}
+
+function selectA(qId, val) {
+  allAnswers[qId] = val;
+  renderSection();
+}
+
+function prevSection() { if (currentSection > 0) { currentSection--; renderSection(); } }
+
+function nextSection() {
+  const s = SECTIONS[currentSection];
+  const unanswered = s.questions.filter(q => !allAnswers[q.id]).length;
+  if (unanswered > 0) { alert(`Please answer all ${unanswered} remaining question(s).`); return; }
+  if (currentSection < SECTIONS.length-1) { currentSection++; renderSection(); }
+  else showResults();
+}
+
+function showResults() {
+  document.getElementById('mainSection').style.display = 'none';
+  document.getElementById('resultsSection').style.display = 'block';
+  document.getElementById('progressFill').style.width = '100%';
+  document.getElementById('progressLabel').textContent = 'Complete!';
+
+  // OA scores
+  const oaScores = {};
+  OA_COMPONENTS.forEach(oa => { oaScores[oa.id] = { total:0, count:0 }; });
+  SECTIONS.forEach(sec => {
+    sec.questions.filter(q=>q.oa).forEach(q => {
+      if (allAnswers[q.id]) { oaScores[q.oa].total += allAnswers[q.id]; oaScores[q.oa].count++; }
+    });
+  });
+
+  const oaResults = OA_COMPONENTS.map(oa => ({
+    ...oa,
+    score: oaScores[oa.id].count ? Math.round(oaScores[oa.id].total / (oaScores[oa.id].count*5) * 100) : 0
+  }));
+
+  document.getElementById('oaGrid').innerHTML = oaResults.map(oa => `
+    <div class="oa-card" style="border-top-color:${oa.color}">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start">
+        <div class="oa-score" style="color:${oa.color}">${oa.score}%</div>
+        <div style="font-size:28px">${oa.icon}</div>
+      </div>
+      <div class="oa-name">${oa.name}</div>
+      <div class="oa-skt">${oa.skt.toUpperCase()}</div>
+      <div class="oa-bar"><div class="oa-fill" style="width:0%;background:${oa.color}" data-w="${oa.score}%"></div></div>
+      <div class="oa-insight">${oa.score>=70?oa.high:oa.score>=50?oa.mid:oa.low}</div>
+    </div>
+  `).join('');
+
+  setTimeout(() => { document.querySelectorAll('.oa-fill').forEach(el => el.style.width = el.dataset.w); }, 100);
+
+  // Saboteur
+  const sabScores = {};
+  SABOTEURS.forEach(s => { sabScores[s.id] = {total:0,count:0}; });
+  SECTIONS[2].questions.forEach(q => {
+    if (allAnswers[q.id] && q.sab) { sabScores[q.sab].total += allAnswers[q.id]; sabScores[q.sab].count++; }
+  });
+  const primary = SABOTEURS.map(s => ({...s, avg: sabScores[s.id].count ? sabScores[s.id].total/sabScores[s.id].count : 0})).sort((a,b)=>b.avg-a.avg)[0];
+
+  document.getElementById('saboteurSection').innerHTML = `
+    <div class="saboteur-title">Primary Saboteur: ${primary.name}</div>
+    <div class="saboteur-sub">The inner pattern most likely to undermine your effectiveness</div>
+    <div class="saboteur-tag">${primary.name.toUpperCase()} · ACTIVE PATTERN</div>
+    <div class="saboteur-desc">${primary.desc}</div>
+    <div class="saboteur-antidote">🌿 <strong>The Prabodhini Antidote:</strong> ${primary.antidote}</div>
+  `;
+
+  // Export
+  const date = new Date().toISOString().split('T')[0];
+  const weakestOA = [...oaResults].sort((a,b)=>a.score-b.score)[0];
+  const strongestOA = [...oaResults].sort((a,b)=>b.score-a.score)[0];
+  const exportText = `## Organizational Attitude & Leadership Profile
+Date: ${date}
+
+### OA Component Scores:
+${oaResults.map(oa=>`- **${oa.name}** (${oa.skt}): ${oa.score}%`).join('\n')}
+
+### OA Summary:
+- Strongest OA Component: ${strongestOA.name} (${strongestOA.score}%)
+- Primary OA Development Edge: ${weakestOA.name} (${weakestOA.score}%)
+
+### Primary Saboteur: ${primary.name}
+${primary.desc}
+
+Antidote: ${primary.antidote}
+
+### Coaching Implications:
+- Lead from strength: ${strongestOA.name} — find roles and projects that activate this
+- Primary OA investment: ${weakestOA.name} — design specific practices
+- Saboteur awareness: Notice ${primary.name} patterns; use the witness practice`;
+
+  document.getElementById('exportBox').textContent = exportText;
+}
+
+function copyResults() {
+  navigator.clipboard.writeText(document.getElementById('exportBox').textContent);
+  const btn = document.querySelector('.copy-btn');
+  btn.textContent = 'Copied! ✓';
+  setTimeout(() => btn.textContent = 'Copy to Clipboard', 2000);
+}
+
+renderSection();
+</script>
+</body>
+</html>

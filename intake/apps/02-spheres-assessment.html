@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Five Spheres Balance — Prabodhini Catalyst OS</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap');
+  :root {
+    --saffron:#E8720C; --deep:#1A1208; --cream:#FAF6EE; --warm:#F5EDD8;
+    --muted:#8A7B6A; --border:#D4C4A8; --gold:#C5930A;
+    --atma:#5B6FA6; --sangha:#D97B4A; --karma:#4A7C59; --samaj:#9B59B6; --sharira:#C0392B;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Crimson Pro',Georgia,serif; background:var(--cream); color:var(--deep); min-height:100vh; }
+
+  .header { background:var(--deep); color:var(--cream); padding:20px 40px; display:flex; align-items:center; gap:16px; border-bottom:3px solid var(--saffron); }
+  .header-title { font-size:17px; font-weight:300; letter-spacing:.05em; }
+  .header-sub { font-family:'DM Mono',monospace; font-size:11px; color:var(--muted); margin-top:2px; letter-spacing:.1em; }
+
+  .progress-bar { background:var(--warm); padding:12px 40px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:16px; }
+  .progress-track { flex:1; height:4px; background:var(--border); border-radius:2px; overflow:hidden; }
+  .progress-fill { height:100%; border-radius:2px; transition:width .4s ease; }
+  .progress-label { font-family:'DM Mono',monospace; font-size:11px; color:var(--muted); white-space:nowrap; }
+
+  .main { max-width:800px; margin:0 auto; padding:40px 24px; }
+
+  .sphere-tabs { display:flex; gap:4px; margin-bottom:32px; flex-wrap:wrap; }
+  .sphere-tab { padding:8px 16px; border-radius:4px; font-size:14px; cursor:pointer; border:2px solid var(--border); background:white; transition:all .2s; font-family:'Crimson Pro',serif; }
+  .sphere-tab.active { color:white; border-color:transparent; }
+  .sphere-tab.done::after { content:' ✓'; }
+
+  .sphere-header { display:flex; align-items:center; gap:16px; margin-bottom:24px; padding-bottom:16px; border-bottom:2px solid; }
+  .sphere-icon { font-size:40px; }
+  .sphere-title { font-size:28px; font-weight:600; }
+  .sphere-sub { font-size:16px; color:var(--muted); font-style:italic; }
+  .sphere-jp { font-size:13px; color:var(--gold); font-style:italic; margin-top:4px; }
+
+  .question-item { margin-bottom:28px; padding:20px; background:white; border:1px solid var(--border); border-radius:6px; }
+  .q-text { font-size:17px; line-height:1.5; margin-bottom:14px; }
+  .likert { display:flex; gap:6px; }
+  .likert-btn { flex:1; padding:10px 4px; border:2px solid var(--border); background:white; border-radius:4px; cursor:pointer; font-family:'DM Mono',monospace; font-size:13px; color:var(--muted); text-align:center; transition:all .2s; }
+  .likert-btn:hover { border-color:var(--saffron); color:var(--saffron); }
+  .likert-btn.selected { color:white; border-color:transparent; }
+  .likert-labels { display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-top:6px; font-style:italic; }
+
+  .nav-row { display:flex; gap:12px; margin-top:32px; }
+  .btn { padding:12px 28px; border-radius:4px; font-family:'Crimson Pro',serif; font-size:17px; cursor:pointer; border:2px solid; transition:all .2s; }
+  .btn-primary { background:var(--saffron); color:white; border-color:var(--saffron); }
+  .btn-secondary { background:transparent; color:var(--deep); border-color:var(--border); }
+
+  /* Results */
+  #resultsSection { display:none; }
+  .wheel-container { display:flex; justify-content:center; margin:32px 0; }
+  canvas { max-width:100%; }
+
+  .sphere-result { display:flex; align-items:center; gap:20px; padding:20px; background:white; border:1px solid var(--border); border-radius:6px; margin-bottom:12px; }
+  .sphere-score { font-size:48px; font-weight:600; min-width:80px; text-align:center; font-family:'DM Mono',monospace; }
+  .sphere-info h3 { font-size:20px; margin-bottom:4px; }
+  .sphere-bar { height:6px; background:var(--border); border-radius:3px; margin-top:10px; overflow:hidden; width:100%; }
+  .sphere-fill { height:100%; border-radius:3px; transition:width 1s ease .3s; }
+  .sphere-insight { font-size:14px; color:var(--muted); font-style:italic; margin-top:6px; }
+
+  .integrity-box { background:var(--deep); color:var(--cream); padding:32px; border-radius:6px; margin:24px 0; text-align:center; }
+  .integrity-score { font-size:72px; font-family:'DM Mono',monospace; color:var(--saffron); }
+  .integrity-label { font-size:18px; margin-top:8px; }
+  .integrity-sub { font-size:14px; color:var(--muted); margin-top:6px; }
+
+  .export-section { background:var(--warm); border:1px solid var(--border); border-radius:6px; padding:24px; margin-top:24px; }
+  .export-box { background:var(--deep); color:var(--cream); padding:20px; border-radius:4px; font-family:'DM Mono',monospace; font-size:11px; line-height:1.8; white-space:pre-wrap; margin:16px 0; }
+  .copy-btn { background:var(--saffron); color:white; border:none; padding:10px 20px; border-radius:4px; cursor:pointer; font-family:'Crimson Pro',serif; font-size:16px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="header-title">Prabodhini Catalyst OS — Psychometric Suite</div>
+    <div class="header-sub">TEST 2 OF 3 · FIVE SPHERES BALANCE ASSESSMENT</div>
+  </div>
+</div>
+
+<div class="progress-bar">
+  <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%; background:linear-gradient(90deg,var(--saffron),var(--gold))"></div></div>
+  <div class="progress-label" id="progressLabel">Sphere 1 of 5: Atma</div>
+</div>
+
+<div class="main" id="mainContent">
+
+  <div class="sphere-tabs" id="sphereTabs"></div>
+  <div id="questionSection"></div>
+
+  <div class="nav-row">
+    <button class="btn btn-secondary" id="prevBtn" onclick="prevSphere()" style="display:none">← Previous Sphere</button>
+    <button class="btn btn-primary" id="nextBtn" onclick="nextSphere()">Next Sphere →</button>
+  </div>
+
+</div>
+
+<div id="resultsSection" style="padding:40px 24px; max-width:800px; margin:0 auto;">
+  <div class="integrity-box">
+    <div class="integrity-score" id="integrityScore">—</div>
+    <div class="integrity-label">Integral Balance Score</div>
+    <div class="integrity-sub">Average quality across all five spheres of life</div>
+  </div>
+  <div class="wheel-container">
+    <canvas id="wheelCanvas" width="420" height="420"></canvas>
+  </div>
+  <div id="sphereResults"></div>
+  <div class="export-section">
+    <h3 style="font-size:20px; margin-bottom:12px">Save to Profile</h3>
+    <p style="color:var(--muted); font-size:15px; margin-bottom:12px">Copy and append to your <code>profiles/[name]-intake.md</code></p>
+    <div class="export-box" id="exportBox"></div>
+    <button class="copy-btn" onclick="copyResults()">Copy to Clipboard</button>
+  </div>
+</div>
+
+<script>
+const SPHERES = [
+  {
+    id:'atma', name:'Atma', label:'Inner Self & Sadhana', icon:'🔵', color:'#5B6FA6',
+    jp:'Svadhyaya — the practice of honest self-study',
+    questions:[
+      'I have a consistent daily Sadhana practice (meditation, prayer, contemplation, or equivalent).',
+      'I feel genuinely connected to my life\'s deeper purpose — not just my professional role.',
+      'When I face difficulty, I have inner resources to draw on rather than only external support.',
+      'I regularly engage with philosophy, wisdom literature, or spiritual teaching.',
+      'I experience genuine stillness or peace — not just absence of stress — at least occasionally.',
+      'My values clearly guide my major decisions, even when it is costly to follow them.',
+      'I know who I am beneath my titles, roles, and accomplishments.',
+      'I am growing in self-awareness; I understand my patterns, reactions, and motivations better than I did 5 years ago.',
+      'I have a sense of Svadharma — what I am uniquely called to do in the world.',
+      'My inner life is rich enough that I could sit alone with myself for an hour without agitation.',
+    ]
+  },
+  {
+    id:'sangha', name:'Sangha', label:'Family & Close Relationships', icon:'🟡', color:'#D97B4A',
+    jp:'Grihastha Dharma — the forge of character in relationships',
+    questions:[
+      'The quality of my most important relationships (partner/spouse, children, close friends) is genuinely good.',
+      'I am able to be vulnerable and honest with at least one person in my life.',
+      'My family members feel that I am truly present with them — not just physically there.',
+      'I have at least one friendship where I can speak difficult truths and be challenged.',
+      'I regularly invest time in my most important relationships without a professional agenda.',
+      'My partner/closest person feels supported in their own development and aspirations.',
+      'I handle conflict in my close relationships with maturity — without prolonged avoidance or blowup.',
+      'My children or the younger people in my life know the real me, not just a role.',
+      'I feel genuinely appreciated by those who know me best.',
+      'When I look at my closest relationships, I feel a sense of warmth and gratitude.',
+    ]
+  },
+  {
+    id:'karma', name:'Karma Bhoomi', label:'Professional & Creative Work', icon:'🟠', color:'#4A7C59',
+    jp:'Nishkama Karma — full effort, non-attached action',
+    questions:[
+      'My current work is genuinely aligned with my values and Svadharma.',
+      'I regularly experience Flow — full absorption, effortless effectiveness — in my professional work.',
+      'I am growing professionally and intellectually, not just maintaining current competence.',
+      'My work creates genuine value for others — I am not merely executing a job description.',
+      'I have a mentoring relationship — either mentoring someone or being mentored.',
+      'I am building something in my professional domain that will outlast my current role.',
+      'My economic situation gives me sufficient freedom to make choices aligned with my values.',
+      'I am proud of the quality and integrity with which I do my work.',
+      'My professional identity does not consume all other aspects of my identity.',
+      'When I am at work, I am genuinely contributing at the level my capability allows.',
+    ]
+  },
+  {
+    id:'samaj', name:'Samaj Seva', label:'National & Community Contribution', icon:'🟢', color:'#9B59B6',
+    jp:'Dharma-Sansthapana — organized effort for India\'s renewal',
+    questions:[
+      'I have an active, organized contribution to India or my community beyond my professional role.',
+      'My SPG (chosen social domain) has a specific vision and at least some measurable progress.',
+      'I am building with others, not contributing alone — I am part of a collective effort.',
+      'I engage with national affairs with analytical depth, not just political reaction.',
+      'I am actively mentoring or developing leaders who will carry forward important work.',
+      'I apply Organizational Attitude (not just goodwill) to my social contribution.',
+      'My contribution to society is growing in impact, not just in my personal satisfaction.',
+      'I am aware of the systemic forces shaping India and can articulate where my work fits.',
+      'The JP formation I received — I am transmitting it to others, in some form.',
+      'In 10 years, something meaningful will exist in India because of my organized contribution.',
+    ]
+  },
+  {
+    id:'sharira', name:'Sharira-Prana', label:'Physical & Vital Energy', icon:'🔴', color:'#C0392B',
+    jp:'The Rajrishi with a depleted lamp cannot illuminate',
+    questions:[
+      'My physical energy levels allow me to engage fully with all areas of my life.',
+      'I exercise or move my body meaningfully at least 4 times per week.',
+      'I consistently get 7 or more hours of quality sleep.',
+      'My diet is deliberately nutritious — I am not simply fueling on convenience.',
+      'I have a morning routine that centers me before the day\'s demands begin.',
+      'I protect time for genuine rest and recovery, without guilt.',
+      'I do not rely on caffeine, stimulants, or screens to maintain my energy.',
+      'My body is not a source of persistent discomfort, pain, or chronic illness that I am ignoring.',
+      'I feel physically vital — not just functioning, but genuinely alive in my body.',
+      'I have no health concern I am aware of that I am avoiding addressing.',
+    ]
+  },
+];
+
+let currentSphere = 0;
+let allAnswers = {};
+
+function initTabs() {
+  const tabs = document.getElementById('sphereTabs');
+  tabs.innerHTML = SPHERES.map((s,i) => `
+    <button class="sphere-tab" id="tab${i}" onclick="goToSphere(${i})" style="${i===0?`background:${s.color};color:white;border-color:${s.color}`:''}">
+      ${s.icon} ${s.name}
+    </button>
+  `).join('');
+}
+
+function renderSphere() {
+  const s = SPHERES[currentSphere];
+  const progress = (currentSphere / SPHERES.length) * 100;
+  document.getElementById('progressFill').style.width = progress + '%';
+  document.getElementById('progressLabel').textContent = `Sphere ${currentSphere+1} of ${SPHERES.length}: ${s.name}`;
+  document.getElementById('prevBtn').style.display = currentSphere === 0 ? 'none' : 'block';
+  document.getElementById('nextBtn').textContent = currentSphere === SPHERES.length-1 ? 'See Results →' : `Next: ${SPHERES[currentSphere+1]?.name} →`;
+
+  const answers = allAnswers[s.id] || {};
+  document.getElementById('questionSection').innerHTML = `
+    <div class="sphere-header" style="border-color:${s.color}">
+      <div class="sphere-icon">${s.icon}</div>
+      <div>
+        <div class="sphere-title">${s.name}</div>
+        <div class="sphere-sub">${s.label}</div>
+        <div class="sphere-jp">${s.jp}</div>
+      </div>
+    </div>
+    ${s.questions.map((q,i) => `
+      <div class="question-item">
+        <div class="q-text">${i+1}. ${q}</div>
+        <div class="likert">
+          ${[1,2,3,4,5].map(v=>`
+            <button class="likert-btn ${answers[i]===v?'selected':''}" 
+              onclick="selectAnswer('${s.id}',${i},${v})"
+              style="${answers[i]===v?`background:${s.color};border-color:${s.color}`:''}">
+              ${v}
+            </button>
+          `).join('')}
+        </div>
+        <div class="likert-labels"><span>Not true</span><span>Completely true</span></div>
+      </div>
+    `).join('')}
+  `;
+
+  // Update tabs
+  SPHERES.forEach((sp,i) => {
+    const tab = document.getElementById(`tab${i}`);
+    const done = allAnswers[sp.id] && Object.keys(allAnswers[sp.id]).length === sp.questions.length;
+    tab.className = 'sphere-tab' + (done ? ' done' : '') + (i===currentSphere ? ' active' : '');
+    if (i === currentSphere) {
+      tab.style.background = sp.color;
+      tab.style.color = 'white';
+      tab.style.borderColor = sp.color;
+    } else {
+      tab.style.background = done ? '#F0F0F0' : 'white';
+      tab.style.color = 'var(--deep)';
+      tab.style.borderColor = 'var(--border)';
+    }
+  });
+  window.scrollTo(0,0);
+}
+
+function selectAnswer(sphereId, qIndex, val) {
+  if (!allAnswers[sphereId]) allAnswers[sphereId] = {};
+  allAnswers[sphereId][qIndex] = val;
+  renderSphere();
+}
+
+function goToSphere(i) { currentSphere = i; renderSphere(); }
+
+function prevSphere() { if (currentSphere > 0) { currentSphere--; renderSphere(); } }
+
+function nextSphere() {
+  const s = SPHERES[currentSphere];
+  const answers = allAnswers[s.id] || {};
+  const unanswered = s.questions.length - Object.keys(answers).length;
+  if (unanswered > 0) {
+    alert(`Please answer all ${unanswered} remaining question(s) in ${s.name} before continuing.`);
+    return;
+  }
+  if (currentSphere < SPHERES.length - 1) { currentSphere++; renderSphere(); }
+  else showResults();
+}
+
+function showResults() {
+  document.getElementById('mainContent').style.display = 'none';
+  document.getElementById('resultsSection').style.display = 'block';
+  document.getElementById('progressFill').style.width = '100%';
+  document.getElementById('progressLabel').textContent = 'Complete!';
+
+  const scores = SPHERES.map(s => {
+    const answers = allAnswers[s.id] || {};
+    const total = Object.values(answers).reduce((a,b)=>a+b,0);
+    const max = s.questions.length * 5;
+    return { ...s, score: Math.round(total / max * 100), raw: total / s.questions.length };
+  });
+
+  const avg = Math.round(scores.reduce((a,s)=>a+s.score,0) / scores.length);
+  document.getElementById('integrityScore').textContent = avg + '%';
+
+  // Draw wheel
+  drawWheel(scores);
+
+  // Sphere results
+  const insights = {
+    atma: s => s >= 70 ? 'Your inner life is a genuine resource — protect and deepen it.' : s >= 50 ? 'The inner life is present but fragile. Sadhana needs structural protection.' : 'This is the urgent priority — without a strong Atma foundation, all else is unsustainable.',
+    sangha: s => s >= 70 ? 'Your close relationships are a genuine source of strength.' : s >= 50 ? 'Relationships exist but are not fully nourished. More genuine presence is needed.' : 'A critical gap. The Grihastha Dharma is calling for serious attention.',
+    karma: s => s >= 70 ? 'Your work is meaningfully aligned with your Svadharma.' : s >= 50 ? 'Work is functional but not yet fully an expression of your deepest calling.' : 'A significant misalignment between professional life and Svadharma. Needs coaching attention.',
+    samaj: s => s >= 70 ? 'You have a genuine organized contribution to India — a real Adult SPG.' : s >= 50 ? 'Contribution is present but not yet organized for sustained impact.' : 'The Organizational Attitude is yet to be applied to national service. The JP calling is waiting.',
+    sharira: s => s >= 70 ? 'Your body is an asset for the mission. Maintain and improve.' : s >= 50 ? 'Physical health is manageable but not optimised. Small investments would yield large returns.' : 'Physical depletion is limiting your capacity in all other spheres. This needs immediate attention.',
+  };
+
+  document.getElementById('sphereResults').innerHTML = scores.map(s => `
+    <div class="sphere-result">
+      <div class="sphere-score" style="color:${s.color}">${s.score}%</div>
+      <div class="sphere-info" style="flex:1">
+        <h3>${s.icon} ${s.name} — ${s.label}</h3>
+        <div class="sphere-insight">${insights[s.id](s.score)}</div>
+        <div class="sphere-bar"><div class="sphere-fill" style="width:0%;background:${s.color}" data-width="${s.score}%"></div></div>
+      </div>
+    </div>
+  `).join('');
+
+  setTimeout(() => {
+    document.querySelectorAll('.sphere-fill').forEach(el => { el.style.width = el.dataset.width; });
+  }, 100);
+
+  // Export
+  const date = new Date().toISOString().split('T')[0];
+  const weakest = scores.sort((a,b)=>a.score-b.score)[0];
+  const strongest = [...scores].sort((a,b)=>b.score-a.score)[0];
+  const exportText = `## Five Spheres Balance Assessment
+Date: ${date}
+
+### Integral Balance Score: ${avg}%
+
+### Sphere Scores:
+${SPHERES.map(sp => { const sc = scores.find(s=>s.id===sp.id); return `- **${sp.name}** (${sp.label}): ${sc.score}%`; }).join('\n')}
+
+### Key Insights:
+- Strongest Sphere: ${strongest.name} (${strongest.score}%) — leverage this
+- Most Neglected: ${weakest.name} (${weakest.score}%) — primary coaching focus
+- Integrity Gap: ${strongest.score - weakest.score}% spread between highest and lowest
+
+### Coaching Priority:
+The ${weakest.name} sphere requires immediate structured attention.
+${insights[weakest.id](weakest.score)}`;
+
+  document.getElementById('exportBox').textContent = exportText;
+}
+
+function drawWheel(scores) {
+  const canvas = document.getElementById('wheelCanvas');
+  const ctx = canvas.getContext('2d');
+  const cx = 210, cy = 210, r = 170;
+  const n = scores.length;
+
+  ctx.clearRect(0,0,420,420);
+
+  // Background rings
+  for (let ring = 1; ring <= 5; ring++) {
+    ctx.beginPath();
+    ctx.arc(cx, cy, (r * ring / 5), 0, Math.PI*2);
+    ctx.strokeStyle = ring === 5 ? '#D4C4A8' : '#EDE4D4';
+    ctx.lineWidth = ring === 5 ? 2 : 1;
+    ctx.stroke();
+  }
+
+  // Spoke lines
+  scores.forEach((_, i) => {
+    const angle = (Math.PI*2 * i / n) - Math.PI/2;
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(cx + r * Math.cos(angle), cy + r * Math.sin(angle));
+    ctx.strokeStyle = '#D4C4A8';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  });
+
+  // Filled polygon
+  ctx.beginPath();
+  scores.forEach((s, i) => {
+    const angle = (Math.PI*2 * i / n) - Math.PI/2;
+    const dist = r * s.score / 100;
+    const x = cx + dist * Math.cos(angle);
+    const y = cy + dist * Math.sin(angle);
+    if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+  });
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(232,114,12,0.15)';
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(232,114,12,0.8)';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Dots + labels
+  scores.forEach((s, i) => {
+    const angle = (Math.PI*2 * i / n) - Math.PI/2;
+    const dist = r * s.score / 100;
+    const x = cx + dist * Math.cos(angle);
+    const y = cy + dist * Math.sin(angle);
+    
+    ctx.beginPath();
+    ctx.arc(x, y, 6, 0, Math.PI*2);
+    ctx.fillStyle = s.color;
+    ctx.fill();
+
+    const lx = cx + (r + 22) * Math.cos(angle);
+    const ly = cy + (r + 22) * Math.sin(angle);
+    ctx.fillStyle = '#1A1208';
+    ctx.font = 'bold 13px "Crimson Pro"';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(s.icon, lx, ly - 8);
+    ctx.font = '11px "DM Mono"';
+    ctx.fillStyle = s.color;
+    ctx.fillText(s.score + '%', lx, ly + 8);
+  });
+}
+
+function copyResults() {
+  navigator.clipboard.writeText(document.getElementById('exportBox').textContent);
+  const btn = document.querySelector('.copy-btn');
+  btn.textContent = 'Copied! ✓';
+  setTimeout(() => btn.textContent = 'Copy to Clipboard', 2000);
+}
+
+initTabs();
+renderSphere();
+</script>
+</body>
+</html>
