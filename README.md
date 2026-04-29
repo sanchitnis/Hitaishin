@@ -72,7 +72,7 @@ It also includes:
 ### Step 1 — Download the skill
 
 ```bash
-git clone https://github.com/sanjay.chitnis/hitaishin.git
+git clone https://github.com/sanchitnis/hitaishin.git
 ```
 
 Or download the [latest release ZIP](../../releases).
