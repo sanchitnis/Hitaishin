@@ -72,7 +72,7 @@ It also includes:
 ### Step 1 — Download the skill
 
 ```bash
-git clone https://github.com/YOUR-ORG/hitaishin.git
+git clone https://github.com/sanjay.chitnis/hitaishin.git
 ```
 
 Or download the [latest release ZIP](../../releases).
@@ -84,8 +84,7 @@ Or download the [latest release ZIP](../../releases).
 3. Click **+** → **Create Skill** → **Upload ZIP**
 4. Zip the `hitaishin` folder and upload it
 
-> Requires a **Pro, Max, Team, or Enterprise** plan with **Code execution** enabled.
-> Free plan users: see [Alternative Usage](#alternative-usage-without-skills) below.
+> see [Alternative Usage](#alternative-usage-without-skills) below.
 
 ### Step 3 — Start your first session
 
