@@ -29,7 +29,7 @@ Every hour saved from research, drafting, organising, and tracking is an hour av
 
 ## THE AGENT ROSTER
 
-The Prabodhini Catalyst OS uses **six AI agents**, each with a specific mandate:
+The Hitaishin uses **six AI agents**, each with a specific mandate:
 
 | Agent | File | What It Does |
 |-------|------|-------------|

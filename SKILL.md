@@ -1,7 +1,7 @@
 ---
-name: prabodhini-catalyst-os
+name: hitaishin
 description: >
-  The Prabodhini Catalyst OS is an AI coaching operating system for Jnana Prabodhini (JP) alumni
+  The Hitaishin is an AI coaching operating system for Jnana Prabodhini (JP) alumni
   who are balancing personal excellence, family/social life, and significant contribution to India
   and humanity. It is grounded in JP's Man-Making Education philosophy, the Advaita Vedanta tradition,
   the Organizational Attitude framework of Swami Vivekananda, and the teachings of Sri Aurobindo,
@@ -23,7 +23,7 @@ compatibility:
     - Google Drive (vision documents and plans)
 ---
 
-# Prabodhini Catalyst OS — Coaching Skill
+# Hitaishin — Coaching Skill
 
 ## Purpose
 

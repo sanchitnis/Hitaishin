@@ -141,7 +141,7 @@ def run_research_agent(research_brief: str) -> str:
     message = client.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=4096,
-        system=f"""You are the Prabodhini Catalyst OS Research Agent.
+        system=f"""You are the Hitaishin Research Agent.
         
 Your full specification:
 {agent_spec}

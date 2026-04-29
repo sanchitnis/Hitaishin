@@ -6,7 +6,7 @@
 
 ## What This Folder Contains
 
-The `connectors/` folder defines how the Prabodhini Catalyst OS integrates with external tools and services — primarily via Claude's MCP (Model Context Protocol) connector system.
+The `connectors/` folder defines how the Hitaishin integrates with external tools and services — primarily via Claude's MCP (Model Context Protocol) connector system.
 
 ```
 connectors/

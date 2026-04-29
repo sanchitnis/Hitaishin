@@ -1,6 +1,6 @@
 # Contributors
 
-The Prabodhini Catalyst OS is built by and for the JP community and those who love it.
+The Hitaishin is built by and for the JP community and those who love it.
 
 ---
 

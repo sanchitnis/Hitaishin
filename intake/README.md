@@ -6,7 +6,7 @@
 
 ## What This Folder Contains
 
-The `intake/` folder contains everything needed to **onboard a new mentee** into the Prabodhini Catalyst OS. It is the entry point — the place where a new coaching relationship begins and a rich mentee profile is established.
+The `intake/` folder contains everything needed to **onboard a new mentee** into the Hitaishin. It is the entry point — the place where a new coaching relationship begins and a rich mentee profile is established.
 
 ```
 intake/
@@ -49,7 +49,7 @@ Each app ends with a **"Copy to Clipboard"** button that generates a formatted M
 If you want Claude to conduct Stage 1 interactively, say:
 
 ```
-I want to begin my Prabodhini Catalyst OS coaching intake. I'm a JP alumnus.
+I want to begin my Hitaishin coaching intake. I'm a JP alumnus.
 Please guide me through the intake interview.
 ```
 

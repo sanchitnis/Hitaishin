@@ -1,4 +1,4 @@
-# 🔥 Prabodhini Catalyst OS
+# 🔥 Hitaishin
 
 **An open-source AI coaching system for leaders shaped by [Jnana Prabodhini](https://www.jnanaprabodhini.org/)**
 
@@ -10,7 +10,7 @@
 
 ## What This Is
 
-The **Prabodhini Catalyst OS** is a Claude AI *skill* — a structured coaching system that turns Claude into a deeply grounded personal coach for graduates of Jnana Prabodhini (JP), the Pune-based gifted-education institution founded in 1962 on the philosophy of Swami Vivekananda.
+The **Hitaishin** is a Claude AI *skill* — a structured coaching system that turns Claude into a deeply grounded personal coach for graduates of Jnana Prabodhini (JP), the Pune-based gifted-education institution founded in 1962 on the philosophy of Swami Vivekananda.
 
 JP alumni are unusually formed individuals: high-IQ, trained from school age in leadership, steeped in Advaita Vedanta, the Bhagavad Gita, the teachings of Sri Aurobindo, Samarth Ramdas, and Maharshi Dayananda — and carrying a deep conviction that their education was given in service of India's renewal. They are now navigating demanding professional lives, family responsibilities, and national contribution.
 
@@ -36,7 +36,7 @@ The skill activates a **six-agent coaching system** inside Claude:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                  PRABODHINI CATALYST OS                  │
+│                  Hitaishin                  │
 ├──────────────────┬──────────────────────────────────────┤
 │  🔍 Svadharma    │ Purpose, calling, life mission        │
 │     Navigator    │                                       │
@@ -72,7 +72,7 @@ It also includes:
 ### Step 1 — Download the skill
 
 ```bash
-git clone https://github.com/YOUR-ORG/prabodhini-catalyst-os.git
+git clone https://github.com/YOUR-ORG/hitaishin.git
 ```
 
 Or download the [latest release ZIP](../../releases).
@@ -82,7 +82,7 @@ Or download the [latest release ZIP](../../releases).
 1. Open [claude.ai](https://claude.ai) → click your profile icon → **Settings**
 2. Go to **Features** → **Skills**
 3. Click **+** → **Create Skill** → **Upload ZIP**
-4. Zip the `prabodhini-catalyst-os` folder and upload it
+4. Zip the `hitaishin` folder and upload it
 
 > Requires a **Pro, Max, Team, or Enterprise** plan with **Code execution** enabled.
 > Free plan users: see [Alternative Usage](#alternative-usage-without-skills) below.
@@ -92,7 +92,7 @@ Or download the [latest release ZIP](../../releases).
 In any Claude conversation, just say:
 
 ```
-Coach me using the Prabodhini Catalyst OS
+Coach me using the Hitaishin
 ```
 
 Or try:
@@ -128,7 +128,7 @@ This works but requires manual setup each conversation. The Skills feature autom
 ## Repository Structure
 
 ```
-prabodhini-catalyst-os/
+hitaishin/
 │
 ├── SKILL.md                    ← The master intelligence layer
 │                                 (Claude reads this to understand the system)

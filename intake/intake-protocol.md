@@ -1,4 +1,4 @@
-# Prabodhini Catalyst OS — Coaching Intake Protocol
+# Hitaishin — Coaching Intake Protocol
 ## For the Coach: Complete Onboarding Flow for a New Mentee
 
 ---

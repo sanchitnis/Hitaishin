@@ -162,7 +162,7 @@ Move completed tasks from all files into a `gtd/archive/YYYY-MM.md` file at mont
 
 ### Obsidian integration
 
-The folder works natively with [Obsidian](https://obsidian.md/) — open the whole `prabodhini-catalyst-os/` folder as an Obsidian vault. Useful plugins:
+The folder works natively with [Obsidian](https://obsidian.md/) — open the whole `hitaishin/` folder as an Obsidian vault. Useful plugins:
 - **Tasks** — renders checkboxes as interactive task objects with due dates and filters
 - **Dataview** — query tasks across files with SQL-like syntax (e.g., all `#samaj` tasks due this week)
 - **Calendar** — visual weekly/monthly calendar view integrated with tasks
