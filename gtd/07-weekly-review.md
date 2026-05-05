@@ -114,11 +114,11 @@ Catalytic Priority 3:
 
 ---
 
-## PART 6: COACH-SUGGESTED ACTIONS (5 min)
+## PART 6: AI COACH-SUGGESTED ACTIONS (5 min)
 
-Coach-suggested items from last coaching session:
-- [ ] [COACH]: Status: ___
-- [ ] [COACH]: Status: ___
+AI coach-suggested items from last coaching session:
+- [ ] [AI-COACH]: Status: ___
+- [ ] [AI-COACH]: Status: ___
 
 New items for coaching session:
 

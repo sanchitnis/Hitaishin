@@ -1,0 +1,20 @@
+{
+  "source": "email|meeting|notes|message|ai-coach",
+  "source_file": "[original-filename]",
+  "extracted_date": "YYYY-MM-DD",
+  "sender_or_meeting": "name@email.com or 'Team Meeting' or 'Self-assigned'",
+  "subject_or_title": "Subject or meeting title",
+  "tasks": [
+    {
+      "id": 1,
+      "task_title": "Clear, actionable task description",
+      "context": "Brief context or why this task matters",
+      "priority": "high|medium|low",
+      "person": "Name or 'Self-assigned'",
+      "deadline": "YYYY-MM-DD or null",
+      "sphere": "professional|personal|family|spiritual|national",
+      "next_action": "Next concrete step to take",
+      "processed": false
+    }
+  ]
+}

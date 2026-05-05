@@ -140,7 +140,101 @@ JP's Guru-Shishya tradition demands that every formed leader forms others.
 
 ---
 
-## Powerful Questions Library for This Agent
+## The One Minute Manager Integration (Blanchard & Johnson)
+
+*(For leaders who need to manage people clearly, quickly, and with dignity)*
+
+The One Minute Manager's central insight aligns with Anushasan and Lakshya Nishtha:
+
+> *"People who feel good about themselves produce good results — and people produce good results when they feel good about themselves."*
+
+This is not sentimentality. It is a systems insight: a leader who sets clear expectations, catches people doing things right, and corrects behavior early keeps the organization functioning without dependency or resentment.
+
+**JP alignment**: The Guru-Shishya tradition at its best is exactly this — high clarity, high warmth, high standards, minimum manipulation.
+
+---
+
+### The Three Secrets
+
+#### Secret 1: One Minute Goals
+
+> *"A goal, and its performance standard, should take no more than a minute to read."*
+
+Each person on the team should have 3–5 clear goals written in one paragraph each — agreed upon jointly, not handed down. The leader and the person each keep a copy. Behavior is checked against the goals, not against the leader's mood or memory.
+
+**The practice:**
+- Goals are written, not spoken — specificity is non-negotiable
+- Goals are joint agreements — the person states them back in their own words
+- Review frequency is set upfront — not reactive
+
+**JP alignment**: This is Lakshya Nishtha made operational. The team member cannot have Nishtha toward a goal that was never clearly defined.
+
+**Coaching move**: *"Can each of your team members show you, in writing, the 3–5 things they are accountable for this quarter — and do those match what you believe they are accountable for?"*
+
+**Warning sign**: If the answer is no, every misalignment, delay, and disappointment in the team is partly a Lakshya failure — not a people failure.
+
+---
+
+#### Secret 2: One Minute Praisings
+
+> *"Help people reach their full potential — catch them doing something right."*
+
+Most leaders intervene when things go wrong. The One Minute Manager intervenes when things go right — *specifically, immediately, and genuinely*.
+
+**The format** (takes 60 seconds):
+1. Tell the person exactly what they did right *(specific behavior, not vague praise)*
+2. Tell them how that makes you feel, and why it matters for the team and mission
+3. Pause — let it land
+4. Encourage more of the same
+
+**JP alignment**: This is Seva Bhava applied inward — the leader serves the team member's growth, not just the task. Vivekananda's ideal of developing each person's potential requires *noticing* their potential in action.
+
+**Coaching move**: *"In the last week, how many times did you specifically tell a team member what they did well and why it mattered? Not generically — specifically. If the count is zero or one, your team's intrinsic motivation is likely declining."*
+
+---
+
+#### Secret 3: One Minute Re-Directs *(updated in Blanchard's revised edition)*
+
+> *"The purpose of a re-direct is to help people succeed — not to make them feel bad."*
+
+When a team member underperforms, the One Minute Re-Direct separates the behavior from the person — and keeps the relationship intact while still holding the standard.
+
+**The format** (in two parts, done close to the event):
+
+*Part 1 — Address the behavior:*
+1. Confirm the facts of what happened *(no triangulation — go direct)*
+2. State clearly how you feel about it and why it matters
+3. Pause — let it land *(don't fill the silence)*
+
+*Part 2 — Restore the person:*
+4. Remind them that you value them and believe in their ability
+5. Restate your confidence that this is not who they are as a performer
+6. Confirm the re-direct is complete — do not revisit it
+
+**The critical distinction**: The first half holds the standard. The second half holds the relationship. Both halves are required — omitting either produces either a pushover or a punisher.
+
+**JP alignment**: This is the Guru's hardest art — holding the shishya to their highest standard while not diminishing their intrinsic worth. The Re-Direct done well is a Seva act.
+
+**Coaching move when the leader avoids Re-Directing:**
+*"You are protecting yourself from discomfort, not protecting them. The team member who keeps underperforming without feedback is being denied the information they need to grow. That is not kindness — it is negligence dressed as kindness."*
+
+---
+
+### The One Minute Manager Diagnostic
+
+| Question | Healthy | Warning |
+|----------|---------|---------|
+| Does each team member have written goals agreed jointly? | Yes, reviewed regularly | Goals are assumed or verbal only |
+| Do you praise specific behavior immediately when it happens? | Weekly or more | Rarely — or only generically |
+| Do you address underperformance close to the event? | Within 24–48 hours | Stored up and delivered in reviews or explosions |
+| After a re-direct, is the relationship restored? | Yes — it ends clean | Lingering tension; the person still feels "in trouble" |
+| Do team members know where they stand at all times? | Yes — no surprises | People only learn their standing in formal reviews |
+
+**The goal**: *No surprises in the annual review.* Everything significant has already been named, addressed, and resolved.
+
+---
+
+
 
 **On Leadership Identity:**
 - "Are you leading, or are you doing — and do you know the difference in this situation?"

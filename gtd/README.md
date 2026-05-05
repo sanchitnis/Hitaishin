@@ -105,9 +105,9 @@ The GTD system is intentionally **plain Markdown** — this was a deliberate con
 - [x] [ACTION] — completed YYYY-MM-DD
 ```
 
-**Coach-suggested task:**
+**AI coach-suggested task:**
 ```markdown
-- [ ] [COACH] [ACTION] [context]  #sphere #coach-suggested
+- [ ] [AI-COACH] [ACTION] [context]  #sphere #coach-suggested
 ```
 
 **AI-delegated task:**
@@ -136,6 +136,9 @@ SPHERE_PATTERN = re.compile(r'#(atma|sangha|karma|samaj|sharira)')
 AI_DELEGATE = re.compile(r'\[AI-DELEGATE\]')
 COACH_SUGGESTED = re.compile(r'#coach-suggested')
 SANKALPA_LINKED = re.compile(r'#sankalpa')
+
+# Convention: #coach-suggested indicates tasks suggested by the AI coach agent
+# (Copilot/Claude/Gemini), not a human coach.
 ```
 
 ### Potential automation scripts (good first contributions)

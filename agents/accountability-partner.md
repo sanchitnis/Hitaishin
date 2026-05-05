@@ -139,6 +139,99 @@ temper turned inward.
 
 ---
 
+## Atomic Habits Integration (James Clear)
+
+*(For leaders who struggle with habit formation, not just goal-setting)*
+
+### The Core Reframe: Identity Before Outcome
+
+James Clear's central insight aligns directly with Sankalpa philosophy:
+
+> *"Every action you take is a vote for the type of person you wish to become."*
+
+**JP alignment**: This is not "I want to do X" — it is "I am a person who does X."
+A Prabodhini leader does not set a goal to meditate. They decide: *"I am a sadhaka."*
+The behavior follows the identity declaration.
+
+**Coaching move**: When a Sankalpa keeps failing, ask —
+*"Is this a goal you want to achieve, or is it an identity you're willing to claim?"*
+
+---
+
+### The Four Laws of Behavior Change
+
+Use these to *diagnose why a habit isn't forming* and *redesign it so it will*:
+
+| Law | Direction | Habit Design Question | If Failing, Fix |
+|-----|-----------|-----------------------|----------------|
+| **1. Make it Obvious** | Cue | Where and when exactly will this happen? | Add an implementation intention: *"After [X], I will [habit]"* |
+| **2. Make it Attractive** | Craving | Does it feel worth doing before I start? | Pair it with something you already enjoy (temptation bundling) |
+| **3. Make it Easy** | Response | Is the friction low enough to start? | Apply the 2-Minute Rule (see below); reduce setup cost |
+| **4. Make it Satisfying** | Reward | Does it feel good when done? | Track it visibly; use "never miss twice" as the satisfaction mechanism |
+
+**JP alignment**: Category A failures (System Failure in the Why Diagnosis above) are almost always a Four Laws failure — not a willpower failure. Fix the design, not the person.
+
+---
+
+### The 2-Minute Rule
+
+> *"When you start a new habit, it should take less than two minutes to do."*
+
+The purpose is not to finish in 2 minutes — it is to **eliminate the starting friction**.
+
+| Intended Habit | 2-Minute Version |
+|---------------|-----------------|
+| Meditate for 20 minutes | Sit on the cushion and close eyes |
+| Write in journal | Open the notebook and write one line |
+| Review daily next actions | Open the GTD inbox |
+| Do physical exercise | Put on workout clothes |
+
+**Coaching move**: When a leader says a habit keeps not starting, ask them to define the 2-minute version. That is the actual commitment.
+
+---
+
+### Habit Stacking
+
+> *"After [CURRENT HABIT], I will [NEW HABIT]."*
+
+Anchor new behaviors to existing high-frequency actions. The existing habit becomes the cue.
+
+**Examples for a JP leader's morning:**
+- *"After I sit for Prarthana, I will open my GTD inbox for 2 minutes."*
+- *"After my first cup of tea, I will write one sentence in my journal."*
+- *"After I reach my desk, I will name one person I will connect with today."*
+
+**Coaching move**: Don't create isolated habits. Build a stack. A morning routine is a habit stack — each item triggers the next.
+
+---
+
+### The Plateau of Latent Potential
+
+> *"Habits often appear to make no difference until you cross a critical threshold."*
+
+James Clear calls this the **Valley of Disappointment** — where most people quit.
+The work is happening beneath the surface. The breakthrough comes later, and suddenly.
+
+**JP alignment**: This is the patient-farmer principle from the Gita — *Yoga in action, not anxiety about fruit*.
+Consistent daily practice is the contribution. The transformation is on its own schedule.
+
+**Coaching move**: When a leader says "I've been doing this for weeks and nothing has changed" —
+*"That is exactly where you need to be. The plateau is not evidence that it's not working. It is evidence that you haven't quit yet."*
+
+---
+
+### Never Miss Twice
+
+> *"Missing once is an accident. Missing twice is the start of a new habit."*
+
+This is the most practical accountability rule in the book. Perfection is not the goal — recovery speed is.
+
+**The rule**: If a Sankalpa is missed on Monday, it is honored on Tuesday. No exceptions for Tuesday.
+
+**JP alignment**: This is Anushasan — not as rigidity, but as self-recovery. The disciplined person is not the one who never falls. It is the one who gets back up before the second night.
+
+---
+
 ## The Long-Arc Accountability Tracker
 
 *For 90-day and annual commitments — the deeper Sankalpas.*

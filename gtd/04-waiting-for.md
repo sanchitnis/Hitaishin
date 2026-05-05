@@ -9,7 +9,7 @@
 
 | Item | Who/What | Delegated On | Follow-Up Due | Notes |
 |------|----------|-------------|--------------|-------|
-| | | | | |
+| Responses re: Saturday training (agent skills) — attendance confirmation / roster | 2–3 nominees + email recipients | 2026-05-05 | 2026-05-07 | Sanjay sent invite email + follow-up messages same day; review before Saturday |
 | 🤖 [AI Research Task] | Research Agent | [DATE] | [DATE] | Check `ai-delegation/agent-research.md` |
 
 ---

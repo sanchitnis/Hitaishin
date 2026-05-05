@@ -39,6 +39,24 @@ quality of attention. The JP tradition and modern neuroscience agree: protect th
 | **Svadhyaya** | Reading from tradition: Gita, Upanishads, Vivekananda, Aurobindo, Ramdas | 15–20 min | Philosophical nourishment; not news |
 | **Sankalpa** | Write today's primary commitment across each active sphere | 5 min | Intention activation |
 
+**Profile Update Checklist (capture briefly, update if changed):**
+- Today's energy state (0-10) and dominant mood
+- Top focus for the day and why it matters
+- Key constraint or risk likely to derail execution
+- One explicit commitment for today (time-bound)
+- Any new value signal, pattern, or insight worth adding to the profile
+
+**Daily Thread -> GTD Integration (Morning Trigger):**
+1. Convert accepted commitments from Morning Ignition into actionable lines.
+2. Add them to `gtd/_tasks/coach/00-coach-accepted.md` (only leader-accepted AI coach items).
+3. Split each item into: (a) Profile-completion task or (b) Coaching-forward action.
+4. Process each accepted item into the right GTD list:
+	- Single next step -> `gtd/01-next-actions.md` with `#coach-suggested` (AI coach source)
+	- Multi-step -> `gtd/02-projects.md`
+	- Delegated -> `gtd/04-waiting-for.md`
+	- Deferred -> `gtd/05-someday.md`
+5. During weekly review, clear or re-commit any unprocessed coach-accepted items.
+
 **The non-negotiable**: No phone, no news, no social media until Zone 1 is complete.
 Zone 1 is how you remind yourself *who you are* before the world tells you what to do.
 

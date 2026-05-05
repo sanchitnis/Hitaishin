@@ -1,5 +1,5 @@
 # ⚡ NEXT ACTIONS
-*Single actions, ready to execute. Updated: [DATE]*
+*Single actions, ready to execute. Updated: 2026-05-05*
 
 ---
 
@@ -8,14 +8,14 @@
 **By Sphere**: `#atma` | `#sangha` | `#karma` | `#samaj` | `#sharira`
 **By Context**: `@home` | `@office` | `@anywhere` | `@travel`
 **By Energy**: `#quick` (<15min) | `#medium` (15–45min) | `#deep` (>45min)
-**Special**: `#sankalpa` | `#coach-suggested` | `#ai-delegate`
+**Special**: `#sankalpa` | `#coach-suggested` (AI coach) | `#ai-delegate`
 
 ---
 
 ## 🔵 ATMA (Inner Self & Sadhana)
 <!-- Actions that support your spiritual life, self-development, and Svadharma -->
 
-- [ ] 
+- [ ] [AI-COACH] Confirm coaching cadence and preferred session time window for the next 4 weeks  due:2026-05-09 ~15min #atma #coach-suggested #quick @anywhere [From AI coach queue 2026-05-05]
 - [ ] 
 
 ---
@@ -35,7 +35,7 @@
 - [ ] 
 
 ### 📋 Standard Next Actions
-- [ ] 
+- [ ] [AI-COACH] Schedule one assertive trust-building conversation this week and capture outcome in Session Log  due:2026-05-10 ~20min #karma #coach-suggested #medium @office [Primary growth edge: communication and assertiveness]
 - [ ] 
 
 ---
@@ -43,7 +43,7 @@
 ## 🟢 SAMAJ SEVA (National Contribution & SPG)
 <!-- Actions that advance your Adult SPG and community contribution -->
 
-- [ ] 
+- [ ] [AI-COACH] Draft first shortlist of 5 potential Hitaishin SPG team members with proposed roles  due:2026-05-11 ~30min #samaj #coach-suggested #medium @office [Next action for SPG team roster project]
 - [ ] 
 
 ---
@@ -68,6 +68,7 @@
 ## ✅ COMPLETED THIS WEEK (Archive)
 *Move completed items here before weekly reset*
 
+- [x] [AI-COACH] Draft and send email for Saturday training on agent skills — completed 2026-05-05
 - [x] Example: Completed action — [DATE]
 
 ---
@@ -76,7 +77,8 @@
 
 | Metric | Count |
 |--------|-------|
-| Total active next actions | 0 |
+| Total active next actions | 3 |
 | Sankalpa-linked | 0 |
 | AI-delegated | 0 |
-| Completed this week | 0 |
+| AI coach-suggested | 3 |
+| Completed this week | 1 |

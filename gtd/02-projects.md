@@ -1,5 +1,5 @@
 # 📁 PROJECTS INDEX
-*Multi-step outcomes requiring more than one action. Updated: [DATE]*
+*Multi-step outcomes requiring more than one action. Updated: 2026-05-05*
 
 > A "project" is any outcome requiring more than one action step.
 > Each project has its own file in `gtd/projects/[project-name].md`
@@ -35,6 +35,7 @@
 
 | Project | SPG? | Next Action | Last Updated | Status |
 |---------|------|-------------|-------------|--------|
+| Define Hitaishin SPG team roster (3-5 names + roles) and record in profile | Y | Draft first shortlist of 5 potential team members with roles | 2026-05-05 | Active |
 | | | | | |
 
 ---

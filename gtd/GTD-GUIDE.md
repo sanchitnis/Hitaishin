@@ -85,7 +85,7 @@ gtd/
 | `#atma` `#sangha` `#karma` `#samaj` `#sharira` | Five Sphere |
 | `#quick` `#deep` `#meeting` `#call` | Energy/time required |
 | `#ai-delegate` | Can be handled by an AI agent |
-| `#coach-suggested` | Added by the coaching process |
+| `#coach-suggested` | Added by the AI coaching process |
 | `#sankalpa` | Directly advances an active Sankalpa |
 | `@home` `@office` `@anywhere` `@travel` | Context |
 
@@ -135,16 +135,16 @@ to Svadharma. If a project can't be traced, it is a candidate for the Someday/Ma
 
 ---
 
-## COACH-INITIATED TASKS
+## AI COACH-INITIATED TASKS
 
-The coaching process generates two types of tasks in the GTD system:
+The AI coaching process generates two types of tasks in the GTD system:
 
-### Type 1: Coach-Suggested Actions
-When the coach identifies something actionable from a session, it is entered directly into
+### Type 1: AI Coach-Suggested Actions
+When the AI coach identifies something actionable from a session, it is entered directly into
 the Inbox with the `#coach-suggested` tag and a note about context:
 
 ```markdown
-- [ ] [COACH] Have the difficult conversation with [person] about [topic]  
+- [ ] [AI-COACH] Have the difficult conversation with [person] about [topic]  
       #sangha #coach-suggested @office [From coaching session 2026-04-28]
 ```
 
