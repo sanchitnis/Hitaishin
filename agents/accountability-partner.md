@@ -232,6 +232,40 @@ This is the most practical accountability rule in the book. Perfection is not th
 
 ---
 
+## Dopamine Management for Consistent Follow-Through
+
+*(How to sustain motivation without becoming dependent on stimulation)*
+
+Execution fails less from lack of intent and more from reward-system misdesign. The leader's brain
+gets trained either for deep completion or for rapid novelty seeking. This agent should coach for
+the first.
+
+### The Accountability Dopamine Rules
+
+1. **Earned reward over instant reward**: complete one meaningful action before low-value digital input.
+2. **Completion logging**: every completed Sankalpa gets a visible check mark and brief reflection.
+3. **Reduce variable distraction rewards**: batch messages and social apps to defined windows.
+4. **Use recovery rewards**: movement, hydration, sunlight, and real conversations after deep effort.
+5. **Protect sleep timing**: poor sleep destabilizes next-day motivation and self-control.
+
+### Dopamine-Friendly Commitment Design
+
+| Design Element | Weak Version | Strong Version |
+|---|---|---|
+| Task size | Vague and large | Small, finishable in one sitting |
+| Reward timing | Reward disconnected from completion | Immediate completion acknowledgment |
+| Tracking | Mental only | Written scorecard in GTD/profile |
+| Environment | Distracting by default | Friction added to distractions, removed from action |
+
+**Coaching move**:
+*"Is this plan relying on willpower, or is it designing your dopamine environment so follow-through
+becomes easier than escape?"*
+
+**JP alignment**: Anushasan is not self-punishment. It is intelligent self-governance of attention,
+energy, and reward.
+
+---
+
 ## The Long-Arc Accountability Tracker
 
 *For 90-day and annual commitments — the deeper Sankalpas.*

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leadership & OA Profile — Hitaishin</title>
+<title>Leadership & Organizational Attitude Profile — Hitaishin</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&family=DM+Mono:wght@300;400&display=swap');
   :root {
@@ -85,7 +85,7 @@
 
 <div id="resultsSection">
   <div class="results-header">
-    <h2>Your Leadership & OA Profile</h2>
+    <h2>Your Leadership & Organizational Attitude Profile</h2>
     <p>Vivekananda's Organizational Attitude + Adaptive Leadership + Inner Saboteur Map</p>
   </div>
   <div class="oa-grid" id="oaGrid"></div>
@@ -102,7 +102,7 @@ const OA_COMPONENTS = [
   { id:'lakshya', name:'Lakshya Nishtha', skt:'Goal Commitment', color:'#E74C3C', icon:'🎯',
     low:'Your commitment to stated goals tends to be revised when circumstances become difficult. This is normal but worth examining.',
     mid:'You hold goals with reasonable commitment but sometimes need external accountability to sustain them.',
-    high:'You demonstrate exceptional clarity and unwavering commitment to chosen goals — a foundational OA strength.' },
+    high:'You demonstrate exceptional clarity and unwavering commitment to chosen goals — a foundational Organizational Attitude strength.' },
   { id:'anushasan', name:'Anushasan', skt:'Self-Discipline', color:'#3498DB', icon:'⚡',
     low:'Self-discipline is not yet a consistent strength. Building structural habits would help considerably.',
     mid:'Discipline is present but situationally dependent — strong when motivated, weaker when not.',
@@ -124,7 +124,7 @@ const OA_COMPONENTS = [
 const SABOTEURS = [
   { id:'judge', name:'The Judge', desc:'You hold yourself and others to exacting standards, and the inner critic is relentless when those standards aren\'t met. High achievement often co-exists with persistent self-doubt.', antidote:'The Sthitaprajna antidote: witness the Judge with curiosity, not agreement. "I notice the Judge is speaking. What is it protecting?" — then respond from the Sage.' },
   { id:'hyper_achiever', name:'The Hyper-Achiever', desc:'Your sense of worth is closely tied to what you accomplish. Rest feels earned only after sufficient output. The mission and the self become dangerously identified.', antidote:'The Nishkama Karma antidote: practise doing something purely for its own sake, not for output. Let your being be enough, independent of your doing.' },
-  { id:'controller', name:'The Controller', desc:'Anxiety-driven need to control situations and people. Difficulty trusting others with important work. Often the smartest person in the room who can\'t let the room lead itself.', antidote:'The OA antidote: genuine Sahakar requires releasing control. Practise deliberately giving away work you want to keep, and witnessing the result with curiosity, not judgment.' },
+  { id:'controller', name:'The Controller', desc:'Anxiety-driven need to control situations and people. Difficulty trusting others with important work. Often the smartest person in the room who can\'t let the room lead itself.', antidote:'The Organizational Attitude antidote: genuine Sahakar requires releasing control. Practise deliberately giving away work you want to keep, and witnessing the result with curiosity, not judgment.' },
   { id:'avoider', name:'The Avoider', desc:'Important but uncomfortable conversations, decisions, or risks are systematically postponed. The avoidance is so skillful it masquerades as patience or politeness.', antidote:'The Bravery antidote: schedule the difficult conversation this week. Bravery is not the absence of fear — it is the decision to act despite it.' },
   { id:'rationalist', name:'The Hyper-Rationalist', desc:'Emotional dimensions of situations are systematically under-weighted. Others experience you as brilliant but occasionally cold. Relationships suffer from the absence of felt understanding.', antidote:'The Sangha antidote: in your next important conversation, ask one more question before offering your analysis. "How are you feeling about this?" — and wait for the full answer.' },
 ];
@@ -133,7 +133,7 @@ const SECTIONS = [
   {
     title: 'Organizational Attitude — Part 1',
     intro: 'Vivekananda identified Organizational Attitude as the key to India\'s resurgence. These questions assess five components JP built into its leadership formation.',
-    jpTag: 'VIVEKANANDA · OA FRAMEWORK · FIVE COMPONENTS',
+    jpTag: 'VIVEKANANDA · Organizational Attitude FRAMEWORK · FIVE COMPONENTS',
     questions: [
       { id:'lakshya_1', oa:'lakshya', text:'When I set a goal, I maintain commitment to it even when circumstances make it difficult or inconvenient.' },
       { id:'lakshya_2', oa:'lakshya', text:'I can articulate precisely what I am trying to achieve in the next 90 days across my most important commitments.' },
@@ -236,7 +236,7 @@ function showResults() {
   document.getElementById('progressFill').style.width = '100%';
   document.getElementById('progressLabel').textContent = 'Complete!';
 
-  // OA scores
+  // Organizational Attitude scores
   const oaScores = {};
   OA_COMPONENTS.forEach(oa => { oaScores[oa.id] = { total:0, count:0 }; });
   SECTIONS.forEach(sec => {
@@ -288,12 +288,12 @@ function showResults() {
   const exportText = `## Organizational Attitude & Leadership Profile
 Date: ${date}
 
-### OA Component Scores:
+### Organizational Attitude Component Scores:
 ${oaResults.map(oa=>`- **${oa.name}** (${oa.skt}): ${oa.score}%`).join('\n')}
 
-### OA Summary:
-- Strongest OA Component: ${strongestOA.name} (${strongestOA.score}%)
-- Primary OA Development Edge: ${weakestOA.name} (${weakestOA.score}%)
+### Organizational Attitude Summary:
+- Strongest Organizational Attitude Component: ${strongestOA.name} (${strongestOA.score}%)
+- Primary Organizational Attitude Development Edge: ${weakestOA.name} (${weakestOA.score}%)
 
 ### Primary Saboteur: ${primary.name}
 ${primary.desc}
@@ -302,7 +302,7 @@ Antidote: ${primary.antidote}
 
 ### Coaching Implications:
 - Lead from strength: ${strongestOA.name} — find roles and projects that activate this
-- Primary OA investment: ${weakestOA.name} — design specific practices
+- Primary Organizational Attitude investment: ${weakestOA.name} — design specific practices
 - Saboteur awareness: Notice ${primary.name} patterns; use the witness practice`;
 
   document.getElementById('exportBox').textContent = exportText;

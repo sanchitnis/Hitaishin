@@ -14,7 +14,7 @@ intake/
 └── apps/
     ├── 01-character-strengths.html   ← VIA-adapted psychometric (30 questions)
     ├── 02-spheres-assessment.html    ← Five Spheres balance wheel (50 questions)
-    └── 03-leadership-oa-profile.html ← OA + Saboteur profile (40 questions)
+    └── 03-leadership-oa-profile.html ← Organizational Attitude + Saboteur profile (40 questions)
 ```
 
 ---
@@ -40,7 +40,7 @@ The three HTML files work in any modern browser:
 
 1. Open `apps/01-character-strengths.html` — answer 30 questions about yourself
 2. Open `apps/02-spheres-assessment.html` — rate 50 statements across the Five Spheres
-3. Open `apps/03-leadership-oa-profile.html` — answer 40 questions on OA and leadership
+3. Open `apps/03-leadership-oa-profile.html` — answer 40 questions on Organizational Attitude and leadership
 
 Each app ends with a **"Copy to Clipboard"** button that generates a formatted Markdown block. Copy this and paste it into your `profiles/[your-name]-intake.md` file.
 
@@ -99,10 +99,10 @@ This is a 30-question VIA-adapted assessment. The original VIA Survey has 240 qu
 - Is the Integral Balance Score (average of five sphere percentages) a meaningful single number?
 - Are the sphere-specific coaching insights (generated based on score ranges) accurate and useful?
 
-**App 03 — OA + Leadership Profile**
+**App 03 — Organizational Attitude + Leadership Profile**
 
-Maps to Vivekananda's five OA components plus Saboteur profiling adapted from Shirzad Chamine's Positive Intelligence framework. Review for:
-- Are the OA component questions a valid operationalisation of Vivekananda's framework?
+Maps to Vivekananda's five Organizational Attitude components plus Saboteur profiling adapted from Shirzad Chamine's Positive Intelligence framework. Review for:
+- Are the Organizational Attitude component questions a valid operationalisation of Vivekananda's framework?
 - Are the five Saboteur profiles (Judge, Hyper-Achiever, Controller, Avoider, Rationalist) the most relevant for a JP alumnus population?
 - Are the "Prabodhini Antidotes" for each Saboteur philosophically sound and practically useful?
 

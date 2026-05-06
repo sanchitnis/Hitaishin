@@ -44,6 +44,12 @@ Score each sphere (1–10) for the past week. Write one sentence of honest asses
 - Where did I hold equanimity in a difficult situation — and what enabled it?
 - What would the "Witness" in me say about how this week was lived?
 
+### Step 2A: The Dopamine and Happiness Audit (5-10 min)
+- What drove my effort this week most often: meaning/mastery/contribution, or urgency/novelty/validation?
+- Did I experience at least three non-work joy/recovery moments this week?
+- Which sphere was reward-starved (Atma, Sangha, Karma Bhoomi, Samaj Seva, or Sharira-Prana)?
+- What one environmental change will reduce distraction and improve calm motivation next week?
+
 ### Step 3: The Organizational Attitude Check (10 min)
 Vivekananda's five components — honest self-assessment:
 
@@ -179,6 +185,9 @@ flourishing require input, not just outputs. Saturday is where that input happen
 | Karma Bhoomi: Deep Work Tuesday protected | Yes | |
 | Samaj Seva: SPG advance (any action) | Yes | |
 | Sharira-Prana: 30+ min movement (days/7) | 5+ | |
+| Non-work joy/recovery moments (count/week) | 3+ | |
+| Completion-first mornings (days/7) | 4+ | |
+| Sleep-protective digital sunset (days/7) | 5+ | |
 | Mentoring conversation held | 1+ | |
 | Something written or created | Yes | |
 | Digital-free Saturday morning | Yes | |

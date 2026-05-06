@@ -48,7 +48,7 @@ The skill activates a **six-agent coaching system** inside Claude:
 │  ⚖️  Integral    │ Five-sphere balance: Self · Family ·  │
 │     Life Coach   │ Career · Nation · Body               │
 ├──────────────────┼──────────────────────────────────────┤
-│  🏛️  OA Builder  │ Vivekananda's Organizational         │
+│  🏛️  Organizational Attitude Builder  │ Vivekananda's Organizational         │
 │                  │ Attitude — team & institution building│
 ├──────────────────┼──────────────────────────────────────┤
 │  🧘 Inner Mastery│ Sthitaprajna development, resilience, │
@@ -64,7 +64,7 @@ The skill activates a **six-agent coaching system** inside Claude:
 
 It also includes:
 
-- **3 psychometric web apps** (run in any browser, no backend) — Character Strengths, Five Spheres Balance Wheel, OA Leadership Profile
+- **3 psychometric web apps** (run in any browser, no backend) — Character Strengths, Five Spheres Balance Wheel, Organizational Attitude Leadership Profile
 - **Full GTD task management** in Markdown files — with sphere-tagging, Sankalpa alignment, and AI delegation
 - **AI delegation architecture** — 5 specialised AI agents (Research, Drafting, Planning, Inbox, Review) that handle work the human shouldn't be doing
 - **Complete onboarding lifecycle** — intake interview protocol → psychometrics → synthesis → living mentee profile

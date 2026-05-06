@@ -81,7 +81,7 @@ The mentee profile (`_mentee-profile-template.md`) contains:
 | Section | What It Records | Updated When |
 |---------|----------------|-------------|
 | Identity & Context | Basic facts, life stage | Once (intake) |
-| Psychometric Profile | VIA strengths, sphere scores, OA profile, Saboteur | Once per quarter (retake) |
+| Psychometric Profile | VIA strengths, sphere scores, Organizational Attitude profile, Saboteur | Once per quarter (retake) |
 | Svadharma Profile | Calling, gap, recurring pattern | Quarterly review |
 | Passions & Flow Map | What energises them | As discovered |
 | Adult SPG | Their national contribution commitment | Monthly |

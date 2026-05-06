@@ -15,7 +15,7 @@
 ## 🔵 ATMA (Inner Self & Sadhana)
 <!-- Actions that support your spiritual life, self-development, and Svadharma -->
 
-- [ ] [AI-COACH] Confirm coaching cadence and preferred session time window for the next 4 weeks  due:2026-05-09 ~15min #atma #coach-suggested #quick @anywhere [From AI coach queue 2026-05-05]
+- [x] [AI-COACH] Confirm coaching cadence and preferred session time window for the next 4 weeks  due:2026-05-09 ~15min #atma #coach-suggested #quick @anywhere [From AI coach queue 2026-05-05] — **completed 2026-05-06** (Daily morning + evening 8 PM+; Sunday weekly review)
 - [ ] 
 
 ---
