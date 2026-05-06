@@ -10,6 +10,14 @@ The `references/` folder is the **philosophical and methodological backbone** of
 
 Think of these files as the "curriculum" — the body of knowledge the coach must hold before any meaningful conversation can happen.
 
+### Boundary: No Personal Logs in `references/`
+
+`references/` files are framework-level guidance only.
+Do not store personal metrics, coaching dialogue captures, or weekly/daily logs in this folder.
+
+- Put personal tracking in `profiles/`.
+- Put task and weekly workflow execution in `gtd/`.
+
 ---
 
 ## Files at a Glance

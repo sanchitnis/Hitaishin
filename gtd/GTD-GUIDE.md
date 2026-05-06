@@ -192,3 +192,21 @@ Every task in the Prabodhini GTD system follows this format:
 
 **The Inbox Zero principle**: The Inbox is a landing zone, not a storage system.
 Processing it to zero is an act of respect for your commitments.
+
+---
+
+## MORNING IGNITION -> GTD ROUTING (COACH-ACCEPTED ITEMS)
+
+Use this when a coaching conversation generates accepted commitments in the morning.
+
+1. Convert accepted commitments from Morning Ignition into actionable lines.
+2. Add them to `gtd/_tasks/coach/00-coach-accepted.md` (only leader-accepted AI coach items).
+3. Split each item into one of two types:
+      - Profile-completion task
+      - Coaching-forward action
+4. Process each accepted item into the right GTD list:
+      - Single next step -> `gtd/01-next-actions.md` with `#coach-suggested`
+      - Multi-step -> `gtd/02-projects.md`
+      - Delegated -> `gtd/04-waiting-for.md`
+      - Deferred -> `gtd/05-someday.md`
+5. During the weekly review, clear or consciously re-commit any unprocessed coach-accepted items.

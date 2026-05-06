@@ -17,6 +17,7 @@
 - [ ] Inbox processed to zero: `gtd/00-inbox.md`
 - [ ] Items captured: ___ | Items processed: ___
 - [ ] AI Inbox Agent output reviewed
+- [ ] Coach-accepted queue reviewed: `gtd/_tasks/coach/00-coach-accepted.md` (cleared or re-committed)
 
 ### 1.2 Next Actions Review
 - [ ] All stale/irrelevant actions removed from `01-next-actions.md`

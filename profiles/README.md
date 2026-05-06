@@ -8,6 +8,11 @@
 
 The `profiles/` folder is where each mentee's **personal coaching record** lives. It grows continuously throughout the coaching relationship — from the first intake interview to the last session.
 
+Template policy:
+- Keep `profiles/_mentee-profile-template.md` blank at all times.
+- Store filled profile content only in person-specific files, for example `profiles/sanjay-chitnis.md`.
+- For each user, create and maintain that user's own file in `profiles/`.
+
 ```
 profiles/
 ├── _mentee-profile-template.md    ← Copy this to create your profile
@@ -122,7 +127,7 @@ If you are coaching multiple JP alumni in an organisation, consider keeping prof
 |------|-----------|
 | Template | `_mentee-profile-template.md` (underscore = template, not a real person) |
 | Intake record | `[firstname]-intake.md` (raw interview notes — Stage 1 output) |
-| Living profile | `[firstname]-profile.md` (the full, evolving document) |
+| Living profile | `[firstname]-profile.md` or `[firstname-lastname].md` (the full, evolving document) |
 | Historical snapshot | `[firstname]-profile-YYYY-Q[N].md` (quarterly archive copy) |
 
 ---

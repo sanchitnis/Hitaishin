@@ -173,21 +173,9 @@ flourishing require input, not just outputs. Saturday is where that input happen
 
 ---
 
-## The Weekly Health Metrics
+## Weekly Metrics Location
 
-*Track monthly, not daily. The trend matters more than the data point.*
+Operational tracking data belongs in personal workflow files, not in `references/`.
 
-| Metric | Target | Last Week |
-|--------|--------|-----------|
-| Five spheres each scored (Svadhyaya done) | Yes | |
-| Atma: Morning Zone 1 maintained (days/7) | 6+ | |
-| Sangha: Genuine presence moment (at least 1) | Yes | |
-| Karma Bhoomi: Deep Work Tuesday protected | Yes | |
-| Samaj Seva: SPG advance (any action) | Yes | |
-| Sharira-Prana: 30+ min movement (days/7) | 5+ | |
-| Non-work joy/recovery moments (count/week) | 3+ | |
-| Completion-first mornings (days/7) | 4+ | |
-| Sleep-protective digital sunset (days/7) | 5+ | |
-| Mentoring conversation held | 1+ | |
-| Something written or created | Yes | |
-| Digital-free Saturday morning | Yes | |
+- Use `gtd/07-weekly-review.md` for the weekly review ritual.
+- Use `profiles/_mentee-profile-template.md` for the monthly **Weekly Health Metrics** record.

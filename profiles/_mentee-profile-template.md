@@ -1,6 +1,9 @@
 # MENTEE PROFILE — [Full Name]
 ## Living Document | Version: 1.0 | Created: [DATE] | Last Updated: [DATE]
 
+> Template policy: keep this file blank.
+> Do not write personal data in this file; create or update a person-specific file in `profiles/` (for example: `profiles/<firstname-lastname>.md`).
+
 > *This document is the single source of truth for the coaching relationship.*
 > *It grows with every session, every review, every breakthrough.*
 
@@ -208,6 +211,41 @@
 | Month | Inbox Zero Achieved | Sankalpa Rate | AI Used | Coach Tasks Done |
 |-------|--------------------|-----------|---------|--------------------|
 | | Y/N | /5 | Y/N | /total |
+
+---
+
+## DAILY SVADHYAYA SIGNALS (OPTIONAL)
+
+*Capture briefly. Use only if it helps awareness and accountability.*
+
+- Today's energy state (0-10) and dominant mood:
+- Top focus for the day and why it matters:
+- Key constraint or risk likely to derail execution:
+- One explicit commitment for today (time-bound):
+- One dopamine risk for today (for example: distraction loop, urgency addiction, sleep debt):
+- One stabilizing counter-move (for example: notification boundary, sunlight walk, completion-first rule):
+- Any new value signal, pattern, or insight worth adding to the profile:
+
+---
+
+## WEEKLY HEALTH METRICS (MONTHLY SNAPSHOT)
+
+*Track monthly, not daily. The trend matters more than the data point.*
+
+| Metric | Target | Last Week |
+|--------|--------|-----------|
+| Five spheres each scored (Svadhyaya done) | Yes | |
+| Atma: Morning Zone 1 maintained (days/7) | 6+ | |
+| Sangha: Genuine presence moment (at least 1) | Yes | |
+| Karma Bhoomi: Deep Work Tuesday protected | Yes | |
+| Samaj Seva: SPG advance (any action) | Yes | |
+| Sharira-Prana: 30+ min movement (days/7) | 5+ | |
+| Non-work joy/recovery moments (count/week) | 3+ | |
+| Completion-first mornings (days/7) | 4+ | |
+| Sleep-protective digital sunset (days/7) | 5+ | |
+| Mentoring conversation held | 1+ | |
+| Something written or created | Yes | |
+| Digital-free Saturday morning | Yes | |
 
 ---
 
