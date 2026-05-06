@@ -112,6 +112,30 @@ Run a Sunday Svadhyaya review with me
 Apply the Purushartha filter to this task: [describe a decision]
 ```
 
+### Direct Entry Paths
+
+You can enter the system from either path without setup friction:
+
+1. **Direct coaching path** (values, purpose, leadership, emotional state)
+    Use prompts like:
+    ```
+    Coach me using the Hitaishin
+    ```
+    ```
+    Help me through this leadership challenge in my team
+    ```
+
+2. **Direct planning path** (daily/weekly execution and GTD)
+    Use prompts like:
+    ```
+    Plan my day using the Five Spheres
+    ```
+    ```
+    Run a weekly review and produce my next actions
+    ```
+
+If you're unsure where to start, begin with planning. The coach will route to deeper modules as needed.
+
 ---
 
 ## Alternative Usage (Without Skills)

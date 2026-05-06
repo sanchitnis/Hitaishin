@@ -38,7 +38,7 @@ the mental noise that prevents both Sadhana and Flow. Capture is an act of menta
 - Everything goes into `gtd/00-inbox.md` immediately
 - Voice memo, quick note, forward an email — all land in the Inbox
 - The only rule: capture it now, process it later
-- **AI capture**: Use the AI Inbox Agent (see `ai-delegation/agent-inbox.md`) to forward emails,
+- **AI capture**: Use the AI Inbox/Review Agent workflow (see `ai-delegation/agent-inbox-review.md`) to forward emails,
   voice notes, and messages for auto-processing
 
 ### Step 2: CLARIFY — What Is This, and What Do I Do About It?
@@ -49,7 +49,7 @@ For each item in the Inbox, ask:
 Is it actionable?
   └── NO → 
       ├── Trash (delete it)
-      ├── Reference (→ gtd/06-reference.md)
+        ├── Reference (store in your project notes or external reference system)
       └── Someday/Maybe (→ gtd/05-someday.md)
   └── YES →
       ├── Can it be done in < 2 minutes? → DO IT NOW
@@ -58,7 +58,7 @@ Is it actionable?
       └── Single next action? → NEXT ACTIONS (→ gtd/01-next-actions.md)
 ```
 
-**The AI Clarify Agent** (`ai-delegation/agent-clarify.md`) can process your Inbox
+**The AI Inbox/Review Agent** (`ai-delegation/agent-inbox-review.md`) can process your Inbox
 items automatically, suggest classification, and draft project breakdowns.
 
 ### Step 3: ORGANISE — Put Things Where They Belong
@@ -71,12 +71,13 @@ gtd/
 ├── 01-next-actions.md   ← Single actions, tagged by sphere + context
 ├── 02-projects.md       ← Multi-step outcomes (index file)
 ├── projects/            ← One file per project
-├── 03-calendar.md       ← Date-specific and time-specific items
 ├── 04-waiting-for.md    ← Delegated items, awaiting response
 ├── 05-someday.md        ← Not now, but someday/maybe
-├── 06-reference.md      ← Reference material index
 └── 07-weekly-review.md  ← Weekly review template + history
 ```
+
+Date-specific items should live in your calendar app. Reference material can live in project files
+or your external notes system.
 
 **Tagging system:**
 
@@ -103,7 +104,7 @@ Every Sunday (integrated into the Svadhyaya Review):
 
 See `gtd/07-weekly-review.md` for the full template.
 
-**The AI Review Agent** (`ai-delegation/agent-review.md`) can pre-process the weekly
+**The AI Inbox/Review Agent** (`ai-delegation/agent-inbox-review.md`) can pre-process the weekly
 review, surface stalled projects, and suggest re-prioritisation.
 
 ### Step 5: ENGAGE — Do the Work with Full Presence
