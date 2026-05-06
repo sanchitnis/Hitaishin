@@ -264,6 +264,39 @@ creates clean workability.
 
 ---
 
+### Practice 10: Dopamine Stewardship and Cheerful Stability
+*(Behavioral neuroscience + Gita-based equanimity)*
+
+Dopamine is a motivation signal, not a happiness signal. When unmanaged, it traps the leader in
+novelty-seeking, phone-check loops, and emotional highs/lows. When stewarded well, it supports
+steady effort, calm satisfaction, and long-horizon progress.
+
+**Core principle**: avoid artificial spikes, cultivate natural rewards.
+
+| Pattern | Dysregulated Form | Regulated Form |
+|---|---|---|
+| Morning state | Start with notifications and urgency | Start with breath, intention, one deliberate action |
+| Work rhythm | Constant switching and stimulation | 45–90 minute focused blocks + short recovery |
+| Reward | Dopamine from scrolling, reacting, novelty | Dopamine from completion, movement, sunlight, connection |
+| Evening | Cognitive overdrive, poor shutdown | Gentle downshift, reflection, sleep protection |
+
+**The daily protocol (minimum viable):**
+1. Protect first 20 minutes of the day from reactive inputs.
+2. Name one meaningful task that will earn a clean completion reward.
+3. Take one movement/sunlight break before noon.
+4. Use a 2-minute completion ritual after major tasks: acknowledge, log, reset.
+5. Protect the last 30–60 minutes before sleep from high stimulation.
+
+**JP alignment**: Ramdas's *mana kara re prasanna* is not denial of difficulty; it is disciplined
+inner climate design. Cheerfulness is a trainable state when physiology, attention, and meaning are
+aligned.
+
+**Coaching use:**
+*"Is your current routine producing calm motivation or compulsive stimulation? Which one specific
+input will you remove this week to stabilize your inner state?"*
+
+---
+
 ## The Crisis Protocol
 
 If the leader presents with genuine crisis (acute loss, mental health distress, suicidal ideation,

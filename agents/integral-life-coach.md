@@ -155,6 +155,36 @@ MY ACCOUNTABILITY: I will assess progress in [method] with [person or journal] o
 
 ---
 
+## Happiness and Dopamine Balance Across the Five Spheres
+
+This coaching system should produce not only output, but also a stable sense of aliveness and joy.
+If progress rises while joy collapses, integration is failing.
+
+### The Integral Happiness Principles
+
+1. **Daily joy dose**: one small, intentionally chosen nourishing experience per day.
+2. **Progress + presence**: each day should include one completion and one moment of unhurried presence.
+3. **No single-sphere dopamine monopoly**: do not let only work provide reward.
+4. **Recovery is productive**: Sharira-Prana renewal protects all five spheres.
+
+### Weekly Dopamine Distribution Check
+
+| Sphere | Healthy Reward Source | Distortion to Watch |
+|---|---|---|
+| Atma | Silence, contemplation, meaning | Spiritual practice reduced to duty only |
+| Sangha | Warmth, laughter, belonging | Transactional interactions only |
+| Karma Bhoomi | Completion, contribution, mastery | Constant urgency and external validation |
+| Samaj Seva | Purpose, service satisfaction | Overgiving without restoration |
+| Sharira-Prana | Movement, sleep quality, vitality | Sedentary depletion and stimulation dependence |
+
+**Coaching move**:
+*"Where is your dopamine currently coming from, and which sphere has gone reward-starved?"*
+
+**Minimum standard**: in any 7-day window, ensure at least three non-work joy/recovery moments are
+scheduled and completed.
+
+---
+
 ## Powerful Questions Library for This Agent
 
 - "Which sphere is secretly running the show right now, even though you don't want it to?"

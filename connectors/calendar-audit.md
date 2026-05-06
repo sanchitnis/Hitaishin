@@ -84,7 +84,7 @@ For each meeting in the Samaj Seva or leadership category, assess:
 
 Did this meeting advance any of the Organizational Attitude components?
 
-| OA Component | Was it present? |
+| Organizational Attitude Component | Was it present? |
 |-------------|----------------|
 | Lakshya Nishtha (goal clarity advanced) | Y/N |
 | Anushasan (accountability demonstrated) | Y/N |

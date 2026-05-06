@@ -18,10 +18,10 @@ This is the **coaching methodology layer** — where the philosophical foundatio
 |-----------|----------------|------------------------|
 | `svadharma-navigator.md` | Life purpose, calling, identity, values | Gita's Svadharma + VIA Strengths + Frankl's Logotherapy |
 | `integral-life-coach.md` | Five-sphere balance, work-life integration | Aurobindo's Integral Yoga + PERMA + ICF competencies |
-| `organizational-attitude-builder.md` | Leadership, institution-building, team dynamics | Vivekananda's OA Framework + Heifetz's Adaptive Leadership |
+| `organizational-attitude-builder.md` | Leadership, institution-building, team dynamics | Vivekananda's Organizational Attitude Framework + Heifetz's Adaptive Leadership |
 | `inner-mastery-coach.md` | Inner state, resilience, Saboteur patterns | Sthitaprajna ideal + Positive Intelligence + Logotherapy |
 | `paristhiti-jnana-analyst.md` | Situational reading, systems thinking, strategy | JP's Paristhiti Jnana + Heifetz + Systems Thinking |
-| `accountability-partner.md` | Goals, commitments, GTD weekly review | Anushasan (OA) + WOOP method + ICF accountability competency |
+| `accountability-partner.md` | Goals, commitments, GTD weekly review | Anushasan (Organizational Attitude) + WOOP method + ICF accountability competency |
 
 ---
 

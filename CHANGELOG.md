@@ -69,11 +69,11 @@ Versioning follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html):
 - `references/spg-contribution-tracker.md` — Adult SPG: selection framework, health assessment, India's priority domains
 - `agents/svadharma-navigator.md` — Purpose, calling, VIA strengths integration, three-phase coaching protocol
 - `agents/integral-life-coach.md` — Five-sphere balance, time audit, Aurobindo's Integral Yoga applied
-- `agents/organizational-attitude-builder.md` — Vivekananda's five OA components, Heifetz adaptive leadership overlay
+- `agents/organizational-attitude-builder.md` — Vivekananda's five Organizational Attitude components, Heifetz adaptive leadership overlay
 - `agents/inner-mastery-coach.md` — Mood diagnosis, Saboteur scan, Frankl meaning scan, five inner mastery practices
 - `agents/paristhiti-jnana-analyst.md` — Four-layer situational reading, India's macro context, strategic response protocol
 - `agents/accountability-partner.md` — Weekly check-in protocol, Sankalpa honoured rate, WOOP framework, CLEAR delegation
-- `connectors/calendar-audit.md` — Google Calendar Five-Sphere time audit, meeting quality classification, OA meeting check
+- `connectors/calendar-audit.md` — Google Calendar Five-Sphere time audit, meeting quality classification, Organizational Attitude meeting check
 
 ---
 

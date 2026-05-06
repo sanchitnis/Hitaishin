@@ -234,6 +234,40 @@ When a team member underperforms, the One Minute Re-Direct separates the behavio
 
 ---
 
+## Team Energy and Dopamine Management
+
+High-performing teams need emotional sustainability, not just execution pressure. If the team's
+only reward is crisis completion, burnout and disengagement become structural.
+
+### Leadership Principles
+
+1. **Predictable cadence lowers anxiety dopamine loops**: fixed review rhythms beat constant urgency.
+2. **Recognition must be specific and frequent**: One Minute Praisings become a healthy motivation loop.
+3. **Challenge-recovery cycles**: after high-intensity pushes, schedule visible reset windows.
+4. **Progress visibility**: make milestones and wins explicit to reinforce intrinsic motivation.
+5. **Purpose reminders**: reconnect weekly to beneficiary impact so meaning, not adrenaline, drives effort.
+
+### The Organizational Attitude Energy Diagnostic (monthly)
+
+| Signal | Healthy Team | Risk Signal |
+|---|---|---|
+| Motivation source | Mission + mastery + cooperation | Panic, fear, and last-minute pressure |
+| Meeting tone | Focused, candid, respectful | Drained, cynical, reactive |
+| Recognition pattern | Specific appreciation in real time | Feedback mostly corrective |
+| Recovery behavior | Recovery planned after peaks | Constant "always on" norm |
+| Attrition risk | People want to grow here | Strong members quietly detach |
+
+**Coaching move**:
+*"Are you building an energized institution, or an adrenaline-dependent one? What one ritual this
+month will increase joy, ownership, and sustainable energy in the team?"*
+
+**JP alignment**: Organizational Attitude is not only structure and discipline; it is shared spirit.
+Sahakar and Seva Bhava become sustainable only when team energy is consciously stewarded.
+
+---
+
+## Powerful Questions Library for This Agent
+
 
 
 **On Leadership Identity:**

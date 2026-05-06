@@ -136,7 +136,7 @@ These connectors would add significant value — good first contributions:
 
 **What it would do**:
 - Generate branded social media graphics for LinkedIn posts
-- Create visual frameworks (the Five Spheres wheel, OA radar chart) as shareable images
+- Create visual frameworks (the Five Spheres wheel, Organizational Attitude radar chart) as shareable images
 - Support the personal brand / Digital Twin coaching objective
 
 **MCP**: Canva MCP (`https://mcp.canva.com/mcp`)

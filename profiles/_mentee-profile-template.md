@@ -50,8 +50,8 @@
 **Most Neglected Sphere at Intake**:
 **Integrity Gap** (highest minus lowest):
 
-### OA & Leadership Profile (at intake)
-| OA Component | Score | Level |
+### Organizational Attitude & Leadership Profile (at intake)
+| Organizational Attitude Component | Score | Level |
 |-------------|-------|-------|
 | Lakshya Nishtha | /100 | Strong/Developing/Emerging |
 | Anushasan | /100 | |

@@ -188,8 +188,8 @@ Ask them to articulate (roughly, this will be refined):
 
 ### Test 3: Organizational Attitude & Leadership Style
 **File**: `intake/apps/03-leadership-oa-profile.html`
-**What it measures**: Strength on each OA component + adaptive vs. technical leadership preference + Saboteur profile
-**JP alignment**: Direct Vivekananda OA framework; Sthitaprajna vs. reactive profile
+**What it measures**: Strength on each Organizational Attitude component + adaptive vs. technical leadership preference + Saboteur profile
+**JP alignment**: Direct Vivekananda Organizational Attitude framework; Sthitaprajna vs. reactive profile
 **Time**: 15–20 minutes | 40 questions
 
 ---
@@ -257,6 +257,6 @@ Cadence: | Style: | Accountability: | What to do when rationalizing:
 ## Psychometric Results (appended after Stage 2):
 VIA Top 5 Strengths: [From Test 1]
 Sphere Integrity Score: [From Test 2]
-OA Profile Strengths: [From Test 3]
+Organizational Attitude Profile Strengths: [From Test 3]
 Primary Saboteur: [From Test 3]
 ```

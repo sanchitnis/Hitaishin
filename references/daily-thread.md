@@ -44,6 +44,8 @@ quality of attention. The JP tradition and modern neuroscience agree: protect th
 - Top focus for the day and why it matters
 - Key constraint or risk likely to derail execution
 - One explicit commitment for today (time-bound)
+- One dopamine risk for today (for example: distraction loop, urgency addiction, sleep debt)
+- One stabilizing counter-move (for example: notification boundary, sunlight walk, completion-first rule)
 - Any new value signal, pattern, or insight worth adding to the profile
 
 **Daily Thread -> GTD Integration (Morning Trigger):**
@@ -148,6 +150,11 @@ day has been done. The evening is not for catching up on what Zone 2-4 missed.
 | **Digital Sunset** — no screens 60 min before sleep | | Sleep architecture protection |
 | **Sleep** — 7 hours minimum | | Restoration; the night Sadhana |
 
+**Dopamine Closure Check (2 min):**
+1. Did I seek stimulation today or build meaningful momentum?
+2. Which behavior gave me clean energy (completion, movement, conversation, prayer, learning)?
+3. What one adjustment will reduce tomorrow's distraction pull?
+
 **The Svadhyaya Evening Check (5 questions):**
 1. *Atma*: "Was I in contact with my deeper self today, or just my roles?"
 2. *Sangha*: "Did I give genuine presence to someone who needed it?"
@@ -168,6 +175,11 @@ When travel, crisis, or exceptional demands break the full rhythm, hold these fi
 5. ✅ One evening reflection sentence: "Today I learned ______."
 
 *These five, even on the worst days, maintain the thread.*
+
+**Minimum Viable Dopamine Hygiene (add-on):**
+- Protect the first 20 minutes after waking from reactive digital input.
+- Complete one meaningful action before low-value scrolling.
+- Keep a short evening downshift before sleep (no high-stimulation input in the final 30-60 min).
 
 ---
 
