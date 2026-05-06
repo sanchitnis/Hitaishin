@@ -29,16 +29,17 @@ Every hour saved from research, drafting, organising, and tracking is an hour av
 
 ## THE AGENT ROSTER
 
-The Hitaishin uses **six AI agents**, each with a specific mandate:
+The Hitaishin uses **five operational AI agents** (with Inbox and Review combined), each with a specific mandate:
 
 | Agent | File | What It Does |
 |-------|------|-------------|
-| **Inbox Agent** | `agent-inbox.md` | Captures, sorts, and pre-classifies incoming information |
+| **Inbox Agent** | `agent-inbox-review.md` | Captures, sorts, and pre-classifies incoming information |
 | **Research Agent** | `agent-research.md` | Deep research, synthesis, and knowledge preparation |
 | **Drafting Agent** | `agent-drafting.md` | First-draft production across all writing contexts |
 | **Planning Agent** | `agent-planning.md` | Project decomposition, scheduling, and milestone mapping |
-| **Review Agent** | `agent-review.md` | Weekly/monthly GTD reviews, coaching prep, pattern spotting |
-| **Coaching Agent** | `agent-coaching.md` | The meta-agent — the Prabodhini Catalyst Coach itself |
+| **Review Agent** | `agent-inbox-review.md` | Weekly/monthly GTD reviews, coaching prep, pattern spotting |
+
+The coaching layer is orchestrated by `SKILL.md` and routed into the six coaching specialists in `agents/`.
 
 ---
 
