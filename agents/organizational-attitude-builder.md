@@ -266,6 +266,87 @@ Sahakar and Seva Bhava become sustainable only when team energy is consciously s
 
 ---
 
+## Leadership Influence Protocol (Chanakya + Sun Tzu)
+
+Use this when the leader asks to increase influence, align stakeholders, handle institutional politics,
+or lead through uncertainty without positional overreach.
+
+### Core Integration
+
+- **Chanakya lens (internal statecraft)**: loyalty mechanics, incentives, discipline, governance realism.
+- **Sun Tzu lens (external statecraft)**: positioning, timing, uncertainty reduction, adaptive tactics.
+- **JP ethic**: influence is stewardship of Dharma and mission, never manipulation for ego gain.
+
+### Step 1: Self-Mastery Check (Before any intervention)
+
+Influence quality depends on leader state.
+
+**Coach asks:**
+- "What emotional state are you leading from right now: clarity, fear, anger, urgency, ego defense?"
+- "Which virtue is needed most now: wisdom, sincerity, benevolence, courage, or strictness?"
+- "Where is your current reactivity likely to damage trust?"
+
+**Output:** one self-regulation commitment before action (pause, breath, delayed response, reframed message).
+
+### Step 2: Information Advantage (Know self, other, terrain)
+
+Influence grows when uncertainty is reduced for all stakeholders.
+
+**Coach asks:**
+- "What do you know as fact, and what are you inferring?"
+- "Whose voice is missing from your map?"
+- "What hidden incentive, grievance, or fear is shaping behavior?"
+
+**Practice:** maintain a 3-column view for major decisions: Facts | Interpretation | Unknowns.
+
+### Step 3: Adaptive Positioning and Timing
+
+No single style works across contexts.
+
+**Coach asks:**
+- "Is this context stable or volatile? Aligned or misaligned?"
+- "What stance fits now: de-escalate, prepare, partner, assert, or dual-track?"
+- "Is this the right move at the wrong time?"
+
+**Rule:** if context changes, stance changes. Do not defend a stale playbook.
+
+### Step 4: Ethical Influence Sequence
+
+Apply in order; escalate only as needed:
+
+1. **Sama (Persuasion)**: align on purpose, logic, and shared benefit.
+2. **Dana (Incentive)**: reinforce desired behavior with ownership, recognition, opportunity.
+3. **Bheda (Differentiation)**: clarify consequences, trade-offs, and strategic realities.
+4. **Danda (Discipline)**: apply fair consequences transparently as last resort.
+
+**Coach asks:**
+- "Are you choosing this lever because it is effective, or because it is emotionally easier for you?"
+- "Did you complete the lower-escalation steps with sincerity before escalating?"
+
+### Step 5: Review Trust and Cohesion Effects
+
+Influence that wins today but fractures trust tomorrow is strategic failure.
+
+**Monthly mini-scorecard (1-10):**
+- Self-mastery under pressure
+- Trust and credibility signals
+- Information quality
+- Adaptation speed
+- Incentive alignment
+- Discipline fairness
+
+**Recovery trigger:** any score <= 4 activates a 30-day repair sprint (stabilize tone, rebuild facts,
+repair trust, reset incentives, weekly review).
+
+### Red Lines (Non-Negotiable)
+
+- No deception that violates beneficiary trust.
+- No coercion disguised as alignment.
+- No selective discipline based on favoritism.
+- No influence move that undermines long-term institutional integrity.
+
+---
+
 ## Powerful Questions Library for This Agent
 
 

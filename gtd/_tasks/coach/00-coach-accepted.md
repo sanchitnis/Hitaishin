@@ -15,6 +15,9 @@
 
 ## COACHING ACTIONS (Accepted)
 
+- [x] [AI-COACH] Design and implement beginner interactive orientation mode (what Hitaishin is, how to use it, first 3 actions) with plain-language prompts and quick-start flow  #atma #coach-suggested @office [From feedback FB-20260507-003: accepted on 2026-05-07] -> implemented in references/beginner-interactive-orientation.md + SKILL.md + COACHING-SESSION-WORKFLOW.md on 2026-05-07
+- [x] [AI-COACH] Build curated quote and idiom bank for coaching (Subhashita, Gita shloka, Upanishadic lines, Indian idioms, and modern self-development influencers) with attribution and contextual usage rules  #karma #coach-suggested @office [From feedback FB-20260507-002: accepted on 2026-05-07] -> implemented in references/management-wisdom-playbook.md on 2026-05-07
+- [x] [AI-COACH] Curate and integrate Bhagavad Gita management material into leadership coaching protocols and prompts (with review checkpoints)  #karma #coach-suggested @office [From feedback FB-20260507-001: accepted on 2026-05-07] -> implemented in references/management-wisdom-playbook.md + SKILL.md + COACHING-SESSION-WORKFLOW.md on 2026-05-07
 - [x] [AI-COACH] Schedule one assertive trust-building conversation this week and capture outcome in Session Log  #karma #coach-suggested @office [Primary growth edge: communication and assertiveness] -> processed to gtd/01-next-actions.md on 2026-05-05
 - [x] [AI-COACH] Send email for Saturday training on agent skills  #karma #coach-suggested @office [Morning Ignition accepted commitment] -> processed to gtd/01-next-actions.md on 2026-05-05
 

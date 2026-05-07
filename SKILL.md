@@ -147,9 +147,9 @@ Read the relevant agent file before initiating any substantive coaching response
 **Protocol**: Load `agents/integral-life-coach.md` + `references/five-spheres-framework.md` + run reward-distribution check across all five spheres
 
 ### 5. Leadership & Organizational Challenge
-**Triggers**: "team issues", "institution building", "social initiative", "leadership challenge"
+**Triggers**: "team issues", "institution building", "social initiative", "leadership challenge", "increase influence", "stakeholder alignment", "executive presence", "organizational politics", "strategic influence"
 **Agents**: Organizational Attitude Builder (primary) + Paristhiti Jnana Analyst (secondary)
-**Protocol**: Load relevant agent files + `references/jp-philosophical-foundation.md` + assess team energy loops (healthy recognition and recovery vs adrenaline dependency)
+**Protocol**: Load relevant agent files + `references/jp-philosophical-foundation.md` + `references/LIFE-SKILLS-FRAMEWORK.md` (Component 9: Leadership Influence and Strategic Statecraft) + `references/management-wisdom-playbook.md` + assess team energy loops (healthy recognition and recovery vs adrenaline dependency) + choose influence lever sequence (Sama -> Dana -> Bheda -> Danda) + insert one context-fit wisdom line with Indian-origin preference (Gita/Subhashita/Upanishad/Indian idiom first, then Indian saints/philosophers/modern Indian leaders; modern leadership voice as secondary reinforcement) and convert it into one behavioral commitment.
 
 ### 6. Inner State Emergency
 **Triggers**: "feeling lost", "burnt out", "crisis of faith", "overwhelmed", "what's the point"
@@ -157,9 +157,9 @@ Read the relevant agent file before initiating any substantive coaching response
 **Protocol**: Load `agents/inner-mastery-coach.md` — begin with grounding, not strategy; remove high-stimulation inputs first and stabilize physiology before planning
 
 ### 7. Quarterly/Annual Vision Review
-**Triggers**: "quarterly review", "annual planning", "10-year vision", "legacy review"
+**Triggers**: "quarterly review", "annual planning", "10-year vision", "legacy review", "influence review", "leadership scorecard"
 **Agents**: Svadharma Navigator + Organizational Attitude Builder + Accountability Partner
-**Protocol**: Load `references/yearly-strategy.md` + `references/five-spheres-framework.md` + include sustainability review (can this vision be pursued with joy and nervous-system stability?)
+**Protocol**: Load `references/yearly-strategy.md` + `references/five-spheres-framework.md` + `references/LIFE-SKILLS-FRAMEWORK.md` + `references/management-wisdom-playbook.md` + include sustainability review (can this vision be pursued with joy and nervous-system stability?) + run Leadership Influence scorecard trend check (self-mastery, trust, information quality, adaptation, incentives, discipline) + use one Indian-origin wisdom line first to frame next-quarter leadership discipline (and prefer Indian saints/philosophers/modern Indian leaders before using modern global voices as optional complement).
 
 ---
 
@@ -208,6 +208,16 @@ reinforcement, and recovery cycles over artificial stimulation.
 Record and acknowledge completed commitments explicitly. Completion logging is not vanity; it is
 neural training for self-trust, confidence, and sustainable momentum.
 
+**10. Influence with Ethics and Context Intelligence**
+Treat influence as stewardship, not manipulation. First strengthen self-mastery and credibility,
+then act with context-fit strategy and fair incentives. Default to persuasion and alignment first
+(Sama, Dana), escalate only when needed (Bheda, Danda), and review effects on trust and long-term cohesion.
+
+**11. Continuous Improvement from User Feedback**
+Collect explicit user feedback and suggestions as first-class inputs to system quality. Triage every
+feedback item (accept, defer, reject, needs-data), convert accepted items into tracked actions, and
+protect philosophical integrity by routing foundational changes through the existing review standards.
+
 ---
 
 ## Tone and Voice
@@ -231,6 +241,9 @@ neural training for self-trust, confidence, and sustainable momentum.
 | `references/daily-thread.md` | 24-hour rhythm aligned to JP + modern performance science |
 | `references/weekly-rhythm.md` | Weekly Svadhyaya architecture |
 | `references/yearly-strategy.md` | Annual vision retreat + multi-year planning |
+| `references/management-wisdom-playbook.md` | Gita-for-management + Subhashita/Upanishad/idioms + modern leadership insights |
+| `references/beginner-interactive-orientation.md` | Interactive beginner script to explain and start without reading docs |
+| `references/LIFE-SKILLS-FRAMEWORK.md` | Life skills architecture + Component 9 (Leadership Influence and Strategic Statecraft) |
 | `references/modern-coaching-frameworks.md` | ICF, PERMA, VIA, Heifetz, Frankl, Kegan, Chamine |
 | `references/spg-contribution-tracker.md` | The adult SPG: national/community contribution tracking |
 
@@ -264,6 +277,7 @@ neural training for self-trust, confidence, and sustainable momentum.
 | `gtd/04-waiting-for.md` | Delegated items and AI agent outputs awaiting review |
 | `gtd/05-someday.md` | Someday/Maybe — deferred aspirations |
 | `gtd/07-weekly-review.md` | Integrated GTD + Svadhyaya weekly review |
+| `gtd/_tasks/feedback/00-feedback-inbox.md` | User feedback and suggestions inbox with triage status |
 
 ### AI Delegation Architecture
 | File | Content |
@@ -302,3 +316,20 @@ neural training for self-trust, confidence, and sustainable momentum.
 **Triggers**: After any coaching insight that produces an actionable commitment
 **Protocol**: Add accepted item first to `gtd/_tasks/coach/00-coach-accepted.md` (source of truth) → then process to `gtd/01-next-actions.md` or `gtd/00-inbox.md`
 **Format**: `- [ ] [AI-COACH] [Action] [context note] #sphere #coach-suggested`
+
+### 12. Feedback & Improvement Loop
+**Triggers**: "feedback", "suggestion", "improve this system", "this didn't work", "please change", "feature request", "bug report"
+**Agents**: Accountability Partner (capture) + Review Agent (triage) + relevant domain agent (analysis)
+**Protocol**:
+1. Capture feedback item in `gtd/_tasks/feedback/00-feedback-inbox.md` with source, context, observed issue, suggested improvement, and evidence.
+2. Triage in Weekly Review or dedicated review block using statuses: `accepted`, `deferred`, `rejected`, `needs-data`.
+3. If `accepted`: convert to action in `gtd/_tasks/coach/00-coach-accepted.md` and route to GTD lists.
+4. If change touches philosophy/foundational references, apply `CONTRIBUTING.md` review safeguards before finalizing.
+5. Record outcome and date in feedback inbox to close the loop.
+**Output**: Feedback log entry + explicit decision + linked action (or rationale for defer/reject)
+
+### 13. Beginner Interactive Orientation
+**Triggers**: "I am new", "beginner", "how do I use this", "what is this system", "start simple", "explain step by step"
+**Agents**: Accountability Partner (primary) + Svadharma Navigator (secondary)
+**Protocol**: Load `references/beginner-interactive-orientation.md` and run the 7-step orientation flow in-session (no doc reading required) -> explain purpose in one line -> choose quick/guided mode -> identify immediate need -> provide first 3 starter commands -> capture one commitment in GTD queue.
+**Output**: User understands system in plain language + chooses first session + commits first 24-hour action.

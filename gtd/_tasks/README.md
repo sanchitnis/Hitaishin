@@ -11,6 +11,7 @@ This folder captures and processes raw items (emails, meeting minutes, notes, me
 | `notes/` | Ad-hoc notes, checklists, task lists |
 | `messages/` | Chat, Slack, or message captures |
 | `coach/` | Hitaishin AI coach-suggested tasks accepted by the leader |
+| `feedback/` | User feedback, suggestions, and improvement requests |
 | `json/` | **AUTO**: Processed task files in JSON format |
 | `.archive/` | **AUTO**: Raw files moved here after processing |
 
@@ -23,6 +24,7 @@ For a meeting:    _tasks/meetings/2026-05-05-meeting-title.md
 For notes:        _tasks/notes/2026-05-05-title.md
 For messages:     _tasks/messages/2026-05-05-person.txt
 For coach tasks:  _tasks/coach/00-coach-accepted.md (rolling accepted queue)
+For feedback:     _tasks/feedback/00-feedback-inbox.md (rolling triage queue)
 ```
 
 ### 2. Process & Extract
@@ -45,6 +47,12 @@ Each extracted task goes to GTD list:
 For coach tasks, process only **leader-accepted AI coach** items from `coach/00-coach-accepted.md`.
 If needed, also write a structured JSON capture into `json/` with `source: "ai-coach"`.
 
+For feedback items, process through triage first in `_tasks/feedback/00-feedback-inbox.md`:
+- `accepted` → convert into actionable coach item and route through GTD
+- `deferred` → keep in feedback queue with revisit date
+- `rejected` → close with rationale
+- `needs-data` → collect evidence before decision
+
 ### 5. Archive Raw File
 After processing all tasks from a file:
 1. Update the JSON: mark `"processed": true`
@@ -66,12 +74,14 @@ After processing all tasks from a file:
 - Implied commitments you made
 - Deadlines and context
 - **Your tasks only** (from meetings)
+- Feedback items with enough context to evaluate (problem, impact, suggestion)
 
 ### ❌ DON'T Extract
 - Tasks assigned to others
 - FYI-only information
 - Completed items
 - Vague or non-actionable statements
+- Feedback with no observable issue or no suggested direction (ask for clarification first)
 
 ---
 
