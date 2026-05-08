@@ -30,6 +30,11 @@ Progress is **non-linear and holistic**, not hierarchical. The workflow acknowle
 - Mastery means deepening, not just progressing to the next session type
 - Sessions cycle and deepen, not replace each other
 
+**JP design constraint**: **Vyaktivikas** (development of the person) and **Karyavikas** (development of the work/contribution) must advance together.
+- Inner development without real work and contribution is incomplete.
+- Work and execution without inner growth and character refinement is unstable.
+- Therefore, this workflow repeatedly links self-study, Sankalpa, and inner mastery with SPG, leadership, institution-building, and concrete action.
+
 ### Session Numbering Cross-Reference
 
 `SKILL.md` assigns simple session numbers (0–13) used as **routing shortcuts** in conversation. This document uses Phase/Session IDs (e.g., 2.3) that reflect the **developmental sequence**. Use the table below to map between them.

@@ -158,6 +158,17 @@ the coaching process because they are already *wired in* as learning orientation
 | **Group Tasks** | Emergent leadership; collective action | Organizational Attitude in practice |
 | **Svadhyaya (Self-Study)** | Rigorous self-examination | Weekly and annual reviews |
 
+### Vyaktivikas and Karyavikas Must Grow Together
+
+One of the deepest JP educational intuitions is that **Vyaktivikas** (development of the person)
+and **Karyavikas** (development of the work, mission, or contribution) must proceed together.
+
+- **Vyaktivikas without Karyavikas** becomes refined but socially under-realized; insight does not become institution, service, or change.
+- **Karyavikas without Vyaktivikas** becomes productive but inwardly unstable; work outruns character, clarity, and depth.
+- **The JP ideal** is mutual reinforcement: the work stretches the person, and the person purifies the work.
+
+For the JP alumnus, this means coaching must never reduce growth to either inner wellbeing alone or outer achievement alone. The test is: *Am I becoming more capable, more truthful, and more expansive as a human being, while the work I touch becomes more useful, more organized, and more transformative?*
+
 ---
 
 ## VIII. The Integration Principle — East + West, Ancient + Modern
