@@ -149,23 +149,27 @@ Record responses in `profiles/[name]-intake.md`
 **Skills Developed** *(Coach)*:
 - **Synthesis and pattern recognition** (ICF Competency 7 — Evokes Awareness) — connecting disparate data into a coherent picture
 - **Identifying the central theme** — what thread runs through everything?
+- **Naming the provisional one idea** — forming an initial hypothesis about the organizing idea that may unify this season of the mentee's life
 - **Growth edge mapping** — distinguishing urgent vs. transformative vs. long-arc development
 
 **Skills Developed** *(Mentee)*:
 - **Wholeness recognition** — seeing themselves as an integrated human, not compartmentalized
 - **Sankalpa articulation** (JP) — conscious commitment made with will and awareness
+- **Early idea discernment** — distinguishing a real governing idea from temporary excitement or inherited expectation
 - **Coaching relationship clarity** — knowing what to expect and how to work together
 
 **Process**:
 1. Coach reads back synthesis of intake + psychometric data (10 min)
 2. Identify the **Central Theme** — the pattern that runs through everything (5 min)
-3. Confirm the **Three Growth Edges**: Primary (urgent), Secondary (transformative), Long-arc (meaningful) (10 min)
-4. Craft **Coaching Sankalpas** — one per sphere + one meta-commitment (10 min)
-5. Agree on **Coaching Cadence** — rhythm of check-ins, format, accountability style (5 min)
-6. Create living document `profiles/[name]-profile.md`
+3. Name a **Provisional One Idea Hypothesis** (5 min) — if one idea seems to be trying to organize this season of life, what is it?
+4. Confirm the **Three Growth Edges**: Primary (urgent), Secondary (transformative), Long-arc (meaningful) (10 min)
+5. Craft **Coaching Sankalpas** — one per sphere + one meta-commitment (10 min)
+6. Agree on **Coaching Cadence** — rhythm of check-ins, format, accountability style (5 min)
+7. Create living document `profiles/[name]-profile.md`
 
 **Output**:
 - `profiles/[name]-profile.md` (living coaching document)
+- Provisional One Idea Hypothesis for this season
 - Five Coaching Sankalpas (one per sphere + meta)
 - Agreed coaching cadence and relationship norms
 - Three primary growth edges (confirmed)
@@ -254,28 +258,32 @@ Walk through `references/daily-thread.md` → Zone 1 (Brahma Muhurta) for the ca
 **Skills Developed** *(Coach)*:
 - **Deep purpose questioning** (ICF Competency 7 — Powerful Questions) — questions that open new thinking
 - **Saboteur pattern recognition** (Inner Mastery) — what prevents alignment between calling and action
+- **Single-idea discernment** — separating the mentee's governing idea from noise, status goals, and borrowed ambition
 - **Vision holding** — helping mentees see and trust their calling even when circumstances are difficult
 
 **Skills Developed** *(Mentee)*:
 - **Svadharma articulation** (JP + Gita) — clarity on life purpose aligned with strength and contribution
 - **Calling vs. conditioning awareness** — distinguishing authentic calling from inherited/imposed shoulds
+- **One-idea concentration** (Vivekananda) — identifying the governing idea worth organizing life and effort around in this season
 - **Purpose-motivation alignment** — understanding what truly drives them vs. what drains them
 - **10-year vision embodiment** — not as abstract, but as lived possibility
 
 **Precondition**: Complete Session 2.2 (Five Spheres clarity required before deep purpose work)
 
 **Process**:
-Load `agents/svadharma-navigator.md` + `references/jp-philosophical-foundation.md` + VIA strengths data
+Load `agents/svadharma-navigator.md` + `references/jp-philosophical-foundation.md` + `references/management-wisdom-playbook.md` + VIA strengths data
 
 1. **Strengths-to-calling bridge** (10 min) — VIA top 5 strengths → What work uses these?
 2. **10-year vision refresh** (10 min) — Move beyond intake answer; what has evolved?
 3. **Svadharma articulation** (15 min) — Complete: "My Svadharma is to _____, with _____, so that _____"
-4. **Calling-to-life-path mapping** (10 min) — If this is the calling, what changes? In role? In community? In daily practice?
-5. **Shadow work** (10 min) ⚠️ **Conditional** — If major resistance emerges: "What am I afraid will happen if I fully commit to this calling?"
-6. **Three-part commitment** (5 min) — Short-term (this quarter), medium-term (this year), long-term (next 5 years)
+4. **One Idea discernment** (10 min) — From this Svadharma, what is the one idea that should organize this season of life? Test it against Vivekananda's standard: is it alive enough to think of, dream of, and align action around?
+5. **Calling-to-life-path mapping** (10 min) — If this is the calling, what changes? In role? In community? In daily practice?
+6. **Shadow work** (10 min) ⚠️ **Conditional** — If major resistance emerges: "What am I afraid will happen if I fully commit to this calling?"
+7. **Three-part commitment** (5 min) — Short-term (this quarter), medium-term (this year), long-term (next 5 years)
 
 **Output**:
 - Clear Svadharma articulation
+- Named One Idea for this season (or explicit note that it is still emerging)
 - Updated 10-year vision
 - Calling-aligned actions → GTD
 - Identified obstacles and counter-moves
@@ -440,18 +448,21 @@ This is the **central checkpoint** of the coaching system. Every other session f
 4. **Organizational Attitude Check** (10 min) — How did I show up in relationships/work?
 5. **SPG Pulse** (5 min) — Did I advance my contribution?
 6. **Mentor's Mirror** (5 min) — Who did I mentor/learn from?
-7. **Next Week's Integral Sankalpa** (15 min) — One commitment per sphere
-8. **Learning Distillation** (10 min) — What is the one insight worth keeping?
+7. **One Idea Alignment Check** (5 min) — Did this week's actions actually serve the One Idea, or did life fragment into competing agendas?
+8. **Next Week's Integral Sankalpa** (15 min) — One commitment per sphere, aligned to the One Idea where it is already clear
+9. **Learning Distillation** (10 min) — What is the one insight worth keeping?
 
 **Coaching additions** (beyond solo ritual):
 - Coach reads back patterns from past month (2–3 min)
 - Coach highlights progress, shifts, growth (3 min)
 - Coach asks: "What wants to happen next?" (not what *should* happen)
+- Coach asks: "What one idea, if honored this week, would make the rest of your actions more coherent?"
 - Coach helps refine Sankalpas for next week (5 min)
 
 **Output**:
 - Updated profile with weekly data
 - Next week's five Sankalpas (one per sphere)
+- One Idea alignment insight captured
 - One learning insight captured
 - Any new actions → GTD
 
@@ -545,23 +556,26 @@ This is the **central checkpoint** of the coaching system. Every other session f
 **Skills Developed** *(Mentee)*:
 - **Quarterly reflection practice** — zooming out beyond weekly to see larger patterns
 - **Strategy vs. tactics distinction** — what's changing for good reason vs. what's drift?
+- **Coherence discernment** — testing whether one governing idea is actually integrating the quarter's choices
 - **Cumulative progress recognition** — celebrating how far they've come over 12 weeks
 
 **Process** (90 min):
 1. **Five Spheres quarterly assessment** (15 min) — How has each sphere evolved over 3 months?
 2. **Organizational Attitude assessment** (10 min) — Are leadership/team behaviors improving?
 3. **Progress against Svadharma** (10 min) — Am I more aligned with my calling than 3 months ago?
-4. **Leadership Influence scorecard** (10 min) — Apply Component 9 monthly scorecard trends from `references/LIFE-SKILLS-FRAMEWORK.md` (self-mastery, trust, information quality, adaptation, incentives, discipline)
-5. **Major obstacles identified** (15 min) — What's persistently in the way?
+4. **One Idea coherence review** (10 min) — Is the current One Idea still true, or has it become stale, performative, or too small for what is emerging?
+5. **Leadership Influence scorecard** (10 min) — Apply Component 9 monthly scorecard trends from `references/LIFE-SKILLS-FRAMEWORK.md` (self-mastery, trust, information quality, adaptation, incentives, discipline)
+6. **Major obstacles identified** (15 min) — What's persistently in the way?
    - Internal (belief, capacity, saboteur)?
    - External (environment, relationships, constraints)?
    - Systemic (multiple spheres creating a knot)?
-6. **Learning harvest** (10 min) — What do I know about myself now that I didn't 3 months ago?
-7. **Strategy refresh** (15 min) — Do my Sankalpas need adjustment? Is my vision still current?
-8. **Next quarter intentions** (5 min) → GTD
+7. **Learning harvest** (10 min) — What do I know about myself now that I didn't 3 months ago?
+8. **Strategy refresh** (15 min) — Do my Sankalpas need adjustment? Is my vision still current? Does the One Idea need sharpening?
+9. **Next quarter intentions** (5 min) → GTD
 
 **Output**:
 - Quarterly progress assessment
+- One Idea confirmed, sharpened, or consciously revised
 - Identified systemic patterns
 - Leadership influence trend (improving/stable/eroding) with recovery actions if needed
 - Adjusted strategy/sankalpas if needed
@@ -691,6 +705,7 @@ Complete `references/yearly-strategy.md` → Full Annual Vision Retreat protocol
 **Skills Developed** *(Mentee)*:
 - **Pivot without abandonment** — honoring past commitments while moving forward
 - **Discernment practice** — deeper clarity on what's true calling vs. conditioning
+- **Idea renewal** — recognizing when the old organizing idea has completed its work and a new one must be named
 - **New chapter beginning** — stepping into new identity with intention
 
 **Process** (60–90 min):
@@ -698,12 +713,14 @@ Complete `references/yearly-strategy.md` → Full Annual Vision Retreat protocol
 2. **Grieve the past** (10 min) — What are you letting go of? What was valuable about what's ending?
 3. **New possibilities** (15 min) — In this new context, what wants to emerge? What feels true?
 4. **Svadharma rearticulation** (15 min) — How does your calling evolve with this new chapter?
-5. **Five Spheres re-calibration** (15 min) — How will sphere allocation shift?
-6. **Commitment to the new chapter** (10 min) — What are you saying "yes" to? What are you saying "no" to?
+5. **One Idea reassessment** (10 min) — Does the previous One Idea still hold, or is a new governing idea now asking for full commitment?
+6. **Five Spheres re-calibration** (15 min) — How will sphere allocation shift?
+7. **Commitment to the new chapter** (10 min) — What are you saying "yes" to? What are you saying "no" to?
 
 **Output**:
 - Grief work and closure on the previous chapter
 - Rearticulated Svadharma (if shifted)
+- One Idea retained, revised, or renamed for the new chapter
 - New Five Sphere allocation
 - Commitments to the new chapter
 

@@ -132,6 +132,12 @@ Note: Use short attributed insights or safe paraphrases tied to behavior.
 ### Saints and Philosophers
 
 - Swami Vivekananda: Strength, fearlessness, and service-oriented leadership.
+
+#### Vivekananda for focused execution
+
+- Quote: "Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success."
+- Coaching use: Help the mentee move from scattered aspiration to one governing idea that can organize decisions across spheres.
+- Leadership move: Name the one idea for this season, then remove or deprioritize actions that do not serve it.
 - Sri Aurobindo: Integral growth, not fragmented success.
 - Samarth Ramdas: Discipline in action and social responsibility.
 - Ramana Maharshi: Clarity through inner inquiry before outer reaction.

@@ -44,6 +44,27 @@
 
 ---
 
+## ONE IDEA (Current Season)
+*Name in Session 1.3 or 2.3. Review weekly in Session 3.1. Sharpen quarterly in Session 3.4. Reassess in Session 4.2 when life direction changes.*
+
+**Last reviewed**: [DATE]
+**Status**: Emerging / Named / Testing / Embodied / Recalibrating
+
+**Current One Idea**:
+
+**Why this is the One Idea right now**:
+
+### Five Spheres Alignment to the One Idea
+| Sphere | How this sphere should serve the One Idea this season |
+|--------|-------------------------------------------------------|
+| 🔵 Atma | |
+| 🟡 Sangha | |
+| 🟠 Karma Bhoomi | |
+| 🟢 Samaj Seva | |
+| 🔴 Sharira-Prana | |
+
+---
+
 ## PSYCHOMETRIC PROFILE (from Intake Stage 2)
 
 ### VIA Character Strengths
