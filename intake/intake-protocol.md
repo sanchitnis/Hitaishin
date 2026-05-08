@@ -15,7 +15,7 @@ The intake process is a **3-stage journey** completed over 1–2 weeks:
 | Stage | Format | Time Required | Output |
 |-------|--------|--------------|--------|
 | **Stage 1**: Deep Intake Interview | Guided conversation with coach | 60–90 min | `profiles/[name]-intake.md` |
-| **Stage 2**: Psychometric Suite | 3 interactive web apps | 45–60 min total | Results auto-appended to profile |
+| **Stage 2**: Psychometric Suite | 3 interactive web apps | 45–60 min total | Copy generated Markdown block from each app → paste into profile |
 | **Stage 3**: Synthesis & First Sankalpa | Coach + mentee session | 45 min | `profiles/[name]-profile.md` (living document) |
 
 ---

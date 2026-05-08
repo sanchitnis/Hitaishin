@@ -24,6 +24,7 @@ principle behind each block; customize the form.
 
 ### 🕯️ Zone 1: BRAHMA MUHURTA — The Sacred Opening (Pre-dawn / Early Morning)
 *Primary Sphere: Atma | Duration: 45–90 min*
+**⚑ Canonical source for the 6-step Morning Protocol — all other files reference this section.**
 
 This is the most important hour of the day. What enters the mind first shapes the entire day's
 quality of attention. The JP tradition and modern neuroscience agree: protect the morning.

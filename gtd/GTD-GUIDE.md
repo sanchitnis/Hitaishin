@@ -138,6 +138,8 @@ to Svadharma. If a project can't be traced, it is a candidate for the Someday/Ma
 
 ## AI COACH-INITIATED TASKS
 
+> **Boundary rule**: The coaching queue (`gtd/_tasks/coach/00-coach-accepted.md`) holds **commitments the human mentee will act on**, proposed during coaching sessions. The delegation queue (`ai-delegation/`) holds **work the AI operational agents will perform autonomously**. A task like "Draft the SPG proposal intro section" belongs in delegation; "Review the draft and decide on the opening argument" belongs in the coaching queue.
+
 The AI coaching process generates two types of tasks in the GTD system:
 
 ### Type 1: AI Coach-Suggested Actions

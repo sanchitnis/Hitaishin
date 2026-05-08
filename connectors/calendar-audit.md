@@ -144,3 +144,48 @@ _______________________________________________
 | **Samaj Seva = 0** | National contribution is aspirational, not operational | Schedule the minimum viable SPG commitment |
 | **No white space** | The schedule is a cage, not a container | Deliberate recovery time is not laziness — it is Prana |
 | **Evenings filled with work** | Digital Sunset isn't happening | Boundary 8:30 PM; non-negotiable |
+
+---
+
+## Session Integration
+
+### When to Run the Calendar Audit
+
+The Calendar Audit is most valuable in these session contexts:
+
+| Session | When to invoke | What to pull |
+|---------|---------------|-------------|
+| **Session 2.2** (Five Spheres Balance) | After the mentee scores each sphere manually — use calendar data to cross-validate self-scores | Past 7 days; sphere time allocation + integrity gap |
+| **Session 3.1** (Weekly Svadhyaya Review) | As a grounding reality check at the start — "let's see what the week actually contained" | Past 7 days; full dashboard |
+| **Session 3.4** (Quarterly Review) | After manual quarterly reflection — compare declared priorities to actual time allocation over 90 days | Past 90 days; sphere totals + trend |
+| **Session 4.1** (Leadership Challenge) | When the challenge is structural (can't find time for deep work, team demands, no white space) | Past 2–4 weeks; meeting quality audit |
+
+### How to Invoke in a Session
+
+When the Google Calendar connector is active:
+
+```
+CALENDAR AUDIT COMMAND:
+"Pull the past [7 / 30 / 90] days from Google Calendar.
+Classify each event by the Five Spheres classification criteria.
+Generate the Integrity Gap Report and Calendar Health Dashboard.
+Do not summarize — produce the full structured output."
+```
+
+### How to Close the Audit Loop
+
+After producing the audit:
+1. **Share the Integrity Gap Report first** — let the leader see the data before interpreting it
+2. **Ask the grounding question**: "What does this calendar tell you about what you are actually optimizing for?"
+3. **Wait for the leader's response** — don't rush to fill the silence after they see the gap
+4. **Identify the one structural change** that would close the largest integrity gap
+5. **Capture in GTD**: The structural change becomes a commitment → GTD next action
+
+**Profile update**: After a calendar audit session, update the Five Spheres History table in the mentee's profile with current scores derived from the data (not just the manual self-assessment).
+
+### Precondition
+
+The Google Calendar connector must be active in the Claude session for this spec to execute.
+If the connector is not available, run the manual version: ask the mentee to estimate their sphere
+time allocation from memory and use the Integrity Gap Report format as a manual scoring template.
+

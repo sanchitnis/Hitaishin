@@ -8,6 +8,10 @@
 
 ---
 
+> **Relationship to `SKILL.md`**: This document is the **protocol layer** — step-by-step processes, skills developed, preconditions, and optionality for each session. For session triggers, agent routing, universal coaching principles, and cross-session rules, see `SKILL.md`. The two files work together; neither replaces the other.
+
+---
+
 ## Overview
 
 This document maps the **complete coaching journey** — from intake through ongoing mastery development. Each session type has:
@@ -25,6 +29,27 @@ Progress is **non-linear and holistic**, not hierarchical. The workflow acknowle
 - Multiple paths can run in parallel
 - Mastery means deepening, not just progressing to the next session type
 - Sessions cycle and deepen, not replace each other
+
+### Session Numbering Cross-Reference
+
+`SKILL.md` assigns simple session numbers (0–13) used as **routing shortcuts** in conversation. This document uses Phase/Session IDs (e.g., 2.3) that reflect the **developmental sequence**. Use the table below to map between them.
+
+| SKILL.md # | Session Name | This Doc ID |
+|------------|-------------|-------------|
+| 0 | Profile Bootstrap | Phase 1 → 1.3 |
+| 1 | Morning Ignition | Phase 2 → 2.1 |
+| 2 | Weekly Svadhyaya Review | Phase 3 → 3.1 |
+| 3 | Svadharma Deep Dive | Phase 2 → 2.3 |
+| 4 | Multi-Sphere Balance Audit | Phase 2 → 2.2 |
+| 5 | Leadership & Organizational Challenge | Phase 4 → 4.1 |
+| 6 | Inner State Emergency | Phase 2 → 2.5 |
+| 7 | Quarterly/Annual Vision Review | Phase 3 → 3.4 / 3.5 |
+| 8 | Intake & Onboarding | Phase 1 → 1.1–1.3 |
+| 9 | GTD Processing | GTD-GUIDE.md |
+| 10 | AI Delegation Session | ai-delegation/ |
+| 11 | AI Coach-Initiated Task Injection | (all sessions) |
+| 12 | Feedback & Improvement Loop | gtd/_tasks/feedback/ |
+| 13 | Beginner Interactive Orientation | Phase 1 → 0.0 |
 
 ---
 
@@ -101,7 +126,9 @@ Record responses in `profiles/[name]-intake.md`
 1. **VIA Character Strengths** (`intake/apps/01-character-strengths.html`) → Top 5 and Bottom 5 strengths
 2. **Five Spheres Assessment** (`intake/apps/02-spheres-assessment.html`) → Detailed balance wheel + gap analysis
 3. **Organizational Attitude & Leadership Profile** (`intake/apps/03-leadership-oa-profile.html`) → OA strengths + Saboteur patterns
-4. Results auto-append to `profiles/[name]-profile.md`
+4. Each app generates a Markdown block at completion — copy it and paste it into the **Psychometric Profile** section of `profiles/[name]-profile.md`
+
+   *(The apps run fully offline and cannot write to files directly — the copy-paste step is required.)*
 
 **Output**:
 - VIA strengths profile (with JP interpretation)
@@ -166,8 +193,8 @@ Record responses in `profiles/[name]-intake.md`
 - **Daily profile signal capture** — learning what signals to feed into coaching
 
 **Process**:
-Walk through `references/daily-thread.md` → Zone 1 (Brahma Muhurta) protocol
-1. Teach the 6-step sequence (Wake → Saucha → Praan Kriya → Dhyana → Svadhyaya → Sankalpa)
+Walk through `references/daily-thread.md` → Zone 1 (Brahma Muhurta) for the canonical 6-step sequence
+1. Walk the mentee through the full Zone 1 protocol in `references/daily-thread.md`
 2. Coach the mentee through a trial morning (or planned trial)
 3. Clarify non-negotiables (no phone until complete)
 4. Establish daily signal capture: energy state, focus, constraint, commitment, dopamine risk
@@ -539,6 +566,7 @@ This is the **central checkpoint** of the coaching system. Every other session f
 - Leadership influence trend (improving/stable/eroding) with recovery actions if needed
 - Adjusted strategy/sankalpas if needed
 - Next quarter's focus areas
+- **360-degree feedback trigger check**: Has 3+ months passed and the mentee has not yet done a 360? If so, initiate `references/360-feedback-protocol.md` as the next special session.
 
 **Optionality**: 🟢 **Recommended** (every 3 months, essential for sustained progress)
 
@@ -685,26 +713,72 @@ Complete `references/yearly-strategy.md` → Full Annual Vision Retreat protocol
 
 ### Session 4.3: Depth Coaching in a Specialized Domain ⚠️ **Optional/Advanced**
 
-**Purpose**: Extended coaching in one specialized area (e.g., integral business leadership, advanced Organizational Attitude, Sthitaprajna mastery, SPG co-creation).
+**Purpose**: Extended coaching in one specialized area — building mastery in a single domain over 6–12 months of recurring monthly sessions.
 
-**Agents**: Domain-specialist agent(s)
+**Agents**: Domain-specialist agent(s) as listed per track below
 
 **Applicable to**:
 - Mentees who want to go deeper in one domain (e.g., "I want to master organizational building")
-- Mentees at advanced life stage
-- Mentees with complex professional/social roles
+- Mentees at advanced life stage with stable foundations in Phase 2 work
+- Mentees with complex professional/social roles demanding specialized depth
 
-**Examples**:
-- **Integral Business Leadership** (Organizational Attitude Builder + Paristhiti Jnana) → Monthly 60-min coaching on building a conscious business
-- **Sthitaprajna Mastery** (Inner Mastery Coach + SVN) → Monthly deep practice in equanimity
-- **SPG Co-Creation** (OAB + Paristhiti Jnana) → Coaching the design and launch of an Adult SPG
-- **Strategic Influence Mastery** (OAB + Paristhiti Jnana + Inner Mastery) -> Monthly coaching using Component 9 from `references/LIFE-SKILLS-FRAMEWORK.md` (statecraft, positioning, incentives, discipline)
+**Precondition**: All Phase 2 sessions complete; mentee has a stable Morning Protocol and Weekly Review rhythm.
 
-**Process**: Customized per domain; typically 1 session/month for 6–12 months
+**Skills Developed** *(Coach)*:
+- **Domain mastery facilitation** — sustained coaching over months in a single area, tracking cumulative growth
+- **Plateau-breaking technique** — recognizing when a mentee has plateaued and designing breakthrough interventions
+- **Teaching coaching** — as mentees advance, coaching shifts toward helping them coach others
 
-**Output**: Domain-specific mastery; concrete contribution or practice
+**Skills Developed** *(Mentee)*:
+- **Domain depth** — mastery in one chosen area (Organizational Attitude, Sthitaprajna, SPG strategy, or leadership influence)
+- **Articulating what you've learned** — the ability to teach a domain signals true mastery
+- **Identifying next growing edge** — within a domain, the mastery frontier keeps receding
 
-**Optionality**: 🟡 **Optional/Advanced** (for mentees choosing specialized depth)
+**Tracks** (choose one; run at monthly 60-min cadence):
+
+**Track A: Organizational Attitude Mastery**
+*Agent*: Organizational Attitude Builder + Paristhiti Jnana Analyst
+*Process per session*:
+1. OA component score update (10 min) — which component moved and why?
+2. One deep OA challenge explored (20 min) — team, institution, or SPG challenge through OA lens
+3. Influence lever application review (15 min) — what happened when you used the lever selected last session?
+4. Next lever/experiment committed (10 min) → GTD
+5. One management wisdom anchor (5 min) — select from `references/management-wisdom-playbook.md`; prefer Indian-origin; convert to one behavioral commitment
+
+**Track B: Sthitaprajna Mastery**
+*Agent*: Inner Mastery Coach + Svadharma Navigator
+*Process per session*:
+1. Inner state since last session (10 min) — what destabilized you? What held?
+2. Saboteur evolution check (10 min) — is the primary saboteur shifting? What new one is appearing?
+3. Deep Gita or Upanishad inquiry (15 min) — explore one verse through lived experience, not theory
+4. Contemplative practice review and refinement (15 min) — how is the Sadhana architecture evolving?
+5. Committed inner experiment for next month (10 min)
+
+**Track C: SPG Co-Creation and Leadership**
+*Agent*: Organizational Attitude Builder + Paristhiti Jnana Analyst
+*Process per session*:
+1. SPG progress update (10 min) — what was built, what stalled?
+2. Systemic analysis of SPG context (15 min) — Layer 1–4 Paristhiti reading of current SPG environment
+3. Team and coalition-building work (15 min) — who needs to be brought in? Who is a blocker?
+4. Strategy refinement (15 min) — is the SPG theory of change still current?
+5. Commitments (5 min) → GTD
+
+**Track D: Strategic Influence Mastery**
+*Agent*: Organizational Attitude Builder + Paristhiti Jnana Analyst + Inner Mastery Coach (for inner state)
+*Process per session*:
+Using Component 9 from `references/LIFE-SKILLS-FRAMEWORK.md` (Leadership Influence and Strategic Statecraft):
+1. Monthly influence scorecard review (10 min) — self-mastery, trust, information quality, adaptation, incentives, discipline: each scored 1–5
+2. The month's hardest influence challenge (15 min) — what was at stake? What happened?
+3. Lever sequencing analysis (15 min) — which levers (Sama, Dana, Bheda, Danda) were used? Were they appropriate?
+4. Statecraft reflection (10 min) — what would a Sthitaprajna leader have done differently?
+5. Next month's influence experiment (10 min) → GTD
+
+**Output**:
+- Domain-specific cumulative growth log (maintained in profile under "Depth Track Progress")
+- Monthly commitments → GTD
+- At 6-month mark: articulate what you've learned in language simple enough to teach another
+
+**Optionality**: 🟡 **Optional/Advanced** (for mentees choosing specialized depth; one track at a time)
 
 ---
 

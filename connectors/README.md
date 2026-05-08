@@ -11,14 +11,16 @@ The `connectors/` folder defines how the Hitaishin integrates with external tool
 ```
 connectors/
 ├── README.md              ← You are here
-└── calendar-audit.md      ← Google Calendar integration: Five-Sphere time audit
+├── calendar-audit.md      ← Google Calendar integration: Five-Sphere time audit (Active)
+├── gmail-audit.md         ← Gmail integration: communication quality audit (Spec complete · MCP pending)
+└── drive-audit.md         ← Google Drive integration: vision document audit (Spec complete · MCP pending)
 ```
 
 ---
 
 ## Current Connectors
 
-### `calendar-audit.md` — Google Calendar
+### `calendar-audit.md` — Google Calendar *(Active)*
 
 **What it does**: Reads your Google Calendar events for a given week, classifies each meeting by its primary life sphere, calculates a Five-Sphere time allocation report, runs a meeting quality audit (Generative / Maintenance / Consuming), and produces a Calendar Health Dashboard.
 
@@ -35,6 +37,26 @@ Audit my calendar for this week using the Five Spheres framework
 - Meeting quality scores
 - Delegation recommendations for operational meetings
 - Structural changes suggested
+
+---
+
+### `gmail-audit.md` — Gmail *(Spec complete · MCP connector pending)*
+
+**What it does**: Classifies email threads by sphere, audits response latency across relationship types (family vs. SPG vs. professional), assesses communication tone patterns (Seva Bhava vs. directive), identifies delegation candidates for the AI Drafting Agent, and surfaces whether correspondence patterns match declared priorities.
+
+**Requires**: Gmail MCP connector active in your Claude session. Read-only access to inbox and sent folder (`gmail.readonly` scope).
+
+**Status**: Full specification written. MCP connector implementation pending.
+
+---
+
+### `drive-audit.md` — Google Drive *(Spec complete · MCP connector pending)*
+
+**What it does**: Indexes vision documents in a designated `Hitaishin/` folder in Google Drive, checks document freshness (last-opened date with staleness thresholds), cross-references written Svadharma and vision statements against active Sankalpas in the mentee's profile, tracks year-over-year evolution of annual retreat documents, and flags stale strategic documents for coaching action.
+
+**Requires**: Google Drive MCP connector active in your Claude session. Read-only access to the `Hitaishin/` folder only (`drive.file` scope).
+
+**Status**: Full specification written. MCP connector implementation pending.
 
 ---
 

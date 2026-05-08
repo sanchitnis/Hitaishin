@@ -18,9 +18,9 @@ description: >
   Trigger generously — this OS is the user's philosophical backbone for daily life decisions.
 compatibility:
   connectors:
-    - Google Calendar (meeting and time audit)
-    - Gmail (communication quality review)
-    - Google Drive (vision documents and plans)
+    - Google Calendar (meeting and time audit) — active: connectors/calendar-audit.md
+    - Gmail (communication quality review) — spec complete, MCP pending: connectors/gmail-audit.md
+    - Google Drive (vision documents and plans) — spec complete, MCP pending: connectors/drive-audit.md
 ---
 
 # Hitaishin — Coaching Skill
@@ -70,6 +70,10 @@ In ongoing conversation threads, do not repeat a long introduction each turn.
 Use "Hitaishin" naturally in tone and references, and re-introduce only when context resets
 or the user asks for orientation.
 
+### Terminology Clarity
+
+> **"Hitaishin"** = the AI coaching system (this skill). **"Human coach"** = a human facilitator running a session with a mentee. **"Mentee"** = the person being coached. Avoid the unqualified word **"coach"** in instructions to prevent ambiguity — it could mean the AI system, an AI agent ("Coach" task label in GTD), or a human facilitator.
+
 ---
 
 ## The Philosophical Foundation (Load Always)
@@ -110,6 +114,8 @@ Read the relevant agent file before initiating any substantive coaching response
 
 **Tasking Convention**: In GTD task workflows, "Coach" means the AI coach agent
 (for example, Copilot, Claude, or Gemini), not a human coach.
+
+> **Full session protocols** (step-by-step process, skills developed, preconditions, optionality markers) are in `COACHING-SESSION-WORKFLOW.md`. This section defines routing logic only; load the workflow document when running a full session.
 
 ### 0. Profile Bootstrap (Get Started)
 **Triggers**: "let's create my profile", "start with profile", "new profile", "set me up"
@@ -161,6 +167,25 @@ Read the relevant agent file before initiating any substantive coaching response
 **Triggers**: "quarterly review", "annual planning", "10-year vision", "legacy review", "influence review", "leadership scorecard"
 **Agents**: Svadharma Navigator + Organizational Attitude Builder + Accountability Partner
 **Protocol**: Load `references/yearly-strategy.md` + `references/five-spheres-framework.md` + `references/LIFE-SKILLS-FRAMEWORK.md` + `references/management-wisdom-playbook.md` + include sustainability review (can this vision be pursued with joy and nervous-system stability?) + run Leadership Influence scorecard trend check (self-mastery, trust, information quality, adaptation, incentives, discipline) + use one Indian-origin wisdom line first to frame next-quarter leadership discipline (and prefer Indian saints/philosophers/modern Indian leaders before using modern global voices as optional complement).
+
+---
+
+## Session Context Loading Map
+
+*Use this table to determine which files to load for each session. Load the mentee profile (Identity + Active Sankalpas sections) in every session.*
+
+| Session | Required Files | Conditional Files (load if relevant) |
+|---------|---------------|--------------------------------------|
+| **Morning Ignition (daily)** | mentee profile | `daily-thread.md` if coaching the morning sequence |
+| **Weekly Review** | mentee profile, `weekly-rhythm.md` | `accountability-partner.md` for Sankalpa deep-dive |
+| **Svadharma Deep Dive** | `svadharma-navigator.md`, `jp-philosophical-foundation.md`, mentee profile | `inner-mastery-coach.md` if shadow work emerges |
+| **Multi-Sphere Balance** | `integral-life-coach.md`, `five-spheres-framework.md`, mentee profile | `paristhiti-jnana-analyst.md` for systemic causes |
+| **Leadership Challenge** | `organizational-attitude-builder.md`, mentee profile | `LIFE-SKILLS-FRAMEWORK.md` (Component 9), `management-wisdom-playbook.md` |
+| **Inner State Emergency** | `inner-mastery-coach.md`, mentee profile | `jp-philosophical-foundation.md`, `svadharma-navigator.md` |
+| **Quarterly/Annual Review** | `yearly-strategy.md`, `five-spheres-framework.md`, mentee profile | `LIFE-SKILLS-FRAMEWORK.md`, `management-wisdom-playbook.md` |
+| **Intake (new mentee)** | `intake/intake-protocol.md`, `_mentee-profile-template.md` | — |
+| **GTD Processing** | `gtd/GTD-GUIDE.md`, `gtd/00-inbox.md` | `ai-delegation/AI-DELEGATION-GUIDE.md` |
+| **AI Delegation** | `ai-delegation/AI-DELEGATION-GUIDE.md` | Relevant agent file from `ai-delegation/` |
 
 ---
 

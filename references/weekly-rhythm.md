@@ -39,6 +39,8 @@ Score each sphere (1–10) for the past week. Write one sentence of honest asses
 
 **The JP Svadhyaya principle**: Don't rationalize. Don't compare to others. Just see clearly.
 
+**After scoring**: Copy this week's five scores (+ integral average) into the **Five Spheres History** table in your `profiles/[name]-profile.md`. This takes 2 minutes and creates longitudinal coaching data.
+
 ### Step 2: The Sthitaprajna Reflection (10 min)
 - Where did I react rather than respond this week?
 - Where did I hold equanimity in a difficult situation — and what enabled it?
@@ -74,7 +76,9 @@ Vivekananda's five components — honest self-assessment:
 ### Step 6: Next Week's Integral Sankalpa (15 min)
 
 Set one intentional commitment per sphere for the coming week.
-These are not task lists. They are *sankalpas* — conscious commitments made with will and awareness:
+Use the canonical Sankalpa format and criteria defined in `agents/accountability-partner.md` → **Step 3: Design This Week's Sankalpas**.
+
+*(Format reproduced here for standalone use):*
 
 ```
 Atma Sankalpa: This week I commit to _______ in my inner life.

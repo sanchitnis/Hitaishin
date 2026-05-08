@@ -60,6 +60,8 @@ The coaching layer is orchestrated by `SKILL.md` and routed into the six coachin
 
 ## HOW TO TRIGGER AN AI AGENT
 
+> **Boundary rule**: The delegation queue (this system) holds **work AI operational agents will perform autonomously**. The coaching queue (`gtd/_tasks/coach/00-coach-accepted.md`) holds **commitments the human mentee will act on**, as proposed in coaching sessions. When in doubt: if a human decision, conversation, or judgment is required — it goes to the coaching queue; if the output can be produced by AI without human judgment in the loop — it goes to delegation.
+
 In any GTD or coaching context, use this syntax to create an AI-delegated task:
 
 ```markdown

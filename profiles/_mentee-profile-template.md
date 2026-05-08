@@ -27,6 +27,23 @@
 
 ---
 
+## ACTIVE SANKALPAS
+*Update every Sunday during Weekly Review. Canonical format: `agents/accountability-partner.md` → Step 3.*
+
+**Last updated**: [DATE]
+
+| Sphere | This Week's Sankalpa | Honored? |
+|--------|---------------------|----------|
+| 🔵 Atma | | |
+| 🟡 Sangha | | |
+| 🟠 Karma Bhoomi | | |
+| 🟢 Samaj Seva | | |
+| 🔴 Sharira-Prana | | |
+
+**Meta-Sankalpa** (the one commitment that shapes all others this quarter):
+
+---
+
 ## PSYCHOMETRIC PROFILE (from Intake Stage 2)
 
 ### VIA Character Strengths
@@ -53,6 +70,14 @@
 **Most Neglected Sphere at Intake**:
 **Integrity Gap** (highest minus lowest):
 
+### Five Spheres History
+*Add one row after each Weekly Review (Step 1 of `references/weekly-rhythm.md`). This creates longitudinal trend data.*
+
+| Date | Atma | Sangha | Karma | Samaj | Sharira | Integral | Notes |
+|------|------|--------|-------|-------|---------|----------|-------|
+| [intake] | /10 | /10 | /10 | /10 | /10 | /10 | Baseline |
+| | | | | | | | |
+
 ### Organizational Attitude & Leadership Profile (at intake)
 | Organizational Attitude Component | Score | Level |
 |-------------|-------|-------|
@@ -65,6 +90,13 @@
 **Primary Saboteur**: [Name]
 **Saboteur Description**: [Brief]
 **Adaptive vs Technical Preference**: [Primarily Adaptive / Balanced / Primarily Technical]
+
+### 360-Degree Feedback History
+*Run after 3+ months of coaching. See `references/360-feedback-protocol.md` for the full process.*
+
+| Date | Central Strength (peers) | Impact Gap | Adaptive Hypothesis | OA Gap (self vs peer) |
+|------|--------------------------|-----------|--------------------|-----------------------|
+| | | | | |
 
 ---
 
