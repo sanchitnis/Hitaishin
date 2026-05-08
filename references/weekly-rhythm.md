@@ -63,6 +63,13 @@ Vivekananda's five components — honest self-assessment:
 | Seva Bhava (Service orientation) | | |
 | Sanghatan (Organization-building) | | |
 
+> *"Take small dosages of discomfort every single day. Choose discomfort over comfort daily."*
+> - Lt. Col. Rajiv Sharma
+
+**Weekly coaching prompt**: While setting next week's Sankalpas, choose one daily
+"discomfort rep" (for example: one hard conversation, one difficult-first task block,
+or one device-free silence window) to deliberately build mental muscles.
+
 ### Step 4: The SPG Pulse (5 min)
 - Did I advance my chosen Adult SPG contribution this week, even in a small way?
 - What is the next specific action for my SPG in the coming week?

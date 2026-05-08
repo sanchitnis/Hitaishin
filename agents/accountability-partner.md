@@ -74,6 +74,13 @@ Fix: calibrate — set fewer, more realistic Sankalpas that can actually be hono
 "I knew what was needed. I avoided it. Probably because it was uncomfortable."
 Fix: name the discomfort; commit to facing it; break it into a smaller first step
 
+> *"Take small dosages of discomfort every single day. Choose discomfort over comfort daily."*
+> - Lt. Col. Rajiv Sharma
+
+**Coaching translation**: mental muscles are built like physical muscles - through repeatable,
+progressive challenge. Pick one daily discomfort rep linked to the Sankalpa (difficult call,
+hard conversation, focused work sprint, device-free silence) and log completion.
+
 *Ask the leader to classify honestly.* The self-knowledge here is more valuable than the task itself.
 
 ### Step 3: Design This Week's Sankalpas

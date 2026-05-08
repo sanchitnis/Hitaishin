@@ -50,6 +50,13 @@ Use `gtd/GTD-GUIDE.md` (section: *Morning Ignition -> GTD Routing*) for the step
 **The non-negotiable**: No phone, no news, no social media until Zone 1 is complete.
 Zone 1 is how you remind yourself *who you are* before the world tells you what to do.
 
+> *"Take small dosages of discomfort every single day. Choose discomfort over comfort daily."*
+> - Lt. Col. Rajiv Sharma
+
+**Coaching application**: Treat this as daily mental strength training. A short cold-water finish,
+one difficult first task before messages, or a 10-minute stillness sit when restless are all valid
+"small dosages" that build mental muscles over time.
+
 **JP Connection**: The *Svadhyaya* practice is the adult equivalent of the rigorous self-study
 discipline JP trained from class 5. The morning reclaims this capacity.
 
