@@ -6,7 +6,7 @@
 
 ## What This Folder Contains
 
-The `references/` folder is the **philosophical and methodological backbone** of the entire coaching system. Every coaching agent and session type draws from one or more of these files. They are the wisdom layer that Claude loads to inform its coaching responses.
+The `references/` folder is the **philosophical and methodological backbone** of the entire coaching system. Every coaching agent and session type draws from one or more of these files. They are the wisdom layer that AI loads to inform its coaching responses.
 
 Think of these files as the "curriculum" — the body of knowledge the coach must hold before any meaningful conversation can happen.
 
@@ -36,13 +36,13 @@ Do not store personal metrics, coaching dialogue captures, or weekly/daily logs 
 
 ## How These Files Work in the Skill
 
-When a user begins a coaching session, Claude reads `SKILL.md` first — which tells it *which* reference files to load for *which* type of session. For example:
+When a user begins a coaching session, AI reads `SKILL.md` first — which tells it *which* reference files to load for *which* type of session. For example:
 
 - A morning planning session → loads `daily-thread.md`
 - A purpose/calling conversation → loads `jp-philosophical-foundation.md` + `five-spheres-framework.md`
 - A Sunday review → loads `weekly-rhythm.md` + `five-spheres-framework.md`
 
-Claude does not load all references simultaneously — it selects contextually, keeping the coaching sharp and focused.
+AI does not load all references simultaneously — it selects contextually, keeping the coaching sharp and focused.
 
 ---
 

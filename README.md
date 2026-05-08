@@ -10,7 +10,7 @@
 
 ## What This Is
 
-The **Hitaishin** is a Claude AI *skill* — a structured coaching system that turns Claude into a deeply grounded personal coach for graduates of Jnana Prabodhini (JP), the Pune-based gifted-education institution founded in 1962 on the philosophy of Swami Vivekananda.
+The **Hitaishin** is an AI Agent *skill* — a structured coaching system that turns AI into a deeply grounded personal coach for graduates of Jnana Prabodhini (JP), the Pune-based gifted-education institution founded in 1962 on the philosophy of Swami Vivekananda.
 
 JP alumni are unusually formed individuals: high-IQ, trained from school age in leadership, steeped in Advaita Vedanta, the Bhagavad Gita, the teachings of Sri Aurobindo, Samarth Ramdas, and Maharshi Dayananda — and carrying a deep conviction that their education was given in service of India's renewal. They are now navigating demanding professional lives, family responsibilities, and national contribution.
 
@@ -36,7 +36,7 @@ capability and usage guide.
 
 ## What It Does
 
-The skill activates a **six-agent coaching system** inside Claude:
+The skill activates a **six-agent coaching system** inside AI:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -158,7 +158,7 @@ This works but requires manual setup each conversation. The Skills feature autom
 hitaishin/
 │
 ├── SKILL.md                    ← The master intelligence layer
-│                                 (Claude reads this to understand the system)
+│                                 (AI reads this to understand the system)
 │
 ├── references/                 ← Philosophical and framework foundations
 │   ├── jp-philosophical-foundation.md

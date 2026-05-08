@@ -66,7 +66,7 @@ If you want to write the improvement directly:
 - [ ] Language is accessible to a JP alumnus who is not an academic
 - [ ] Nothing has been removed without explanation
 - [ ] JP-specific terminology is used accurately (see Glossary in `references/README.md`)
-- [ ] Changes tested by asking Claude to coach using the modified file
+- [ ] Changes tested by asking AI to coach using the modified file
 
 ### The editorial process for philosophical changes
 

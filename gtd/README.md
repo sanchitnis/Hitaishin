@@ -138,7 +138,7 @@ COACH_SUGGESTED = re.compile(r'#coach-suggested')
 SANKALPA_LINKED = re.compile(r'#sankalpa')
 
 # Convention: #coach-suggested indicates tasks suggested by the AI coach agent
-# (Copilot/Claude/Gemini), not a human coach.
+# (Copilot/AI/Gemini), not a human coach.
 ```
 
 ### Potential automation scripts (good first contributions)

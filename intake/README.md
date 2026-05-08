@@ -26,7 +26,7 @@ intake/
 The intake is a **3-stage journey** that typically takes 1–2 weeks to complete:
 
 **Stage 1: The Deep Interview** (~60–90 minutes)
-A structured conversation between you and your coach (or with Claude directly) covering who you are, how your life is going across all five spheres, what your vision is, and what you hope to get from coaching.
+A structured conversation between you and your coach (or with AI directly) covering who you are, how your life is going across all five spheres, what your vision is, and what you hope to get from coaching.
 
 **Stage 2: Three Psychometric Assessments** (~45–60 minutes total)
 Three interactive web applications that you complete in a browser — no login, no data stored on any server. All results stay on your device until you copy them to your profile file.
@@ -44,16 +44,16 @@ The three HTML files work in any modern browser:
 
 Each app ends with a **"Copy to Clipboard"** button that generates a formatted Markdown block. Copy this and paste it into your `profiles/[your-name]-intake.md` file.
 
-### Starting your intake with Claude
+### Starting your intake with AI
 
-If you want Claude to conduct Stage 1 interactively, say:
+If you want AI to conduct Stage 1 interactively, say:
 
 ```
 I want to begin my Hitaishin coaching intake. I'm a JP alumnus.
 Please guide me through the intake interview.
 ```
 
-Claude will work through the six modules of the deep interview with you.
+AI will work through the six modules of the deep interview with you.
 
 ### What happens to your data
 

@@ -67,9 +67,9 @@ Expected Output: 3-page synthesis with table of models
 Deadline: 2026-05-10 | Priority: M
 ```
 
-### Step 3: Give the brief to Claude
+### Step 3: Give the brief to AI
 
-In a Claude conversation (with the skill active):
+In an AI conversation (with the skill active):
 ```
 Please act as the Research Agent and complete this research request:
 [paste the filled input format]
@@ -100,7 +100,7 @@ This is a **human-in-the-loop agentic system** — deliberately so, for the curr
 
 ### Moving toward autonomous agents
 
-The specifications in this folder are designed to be promotable to **autonomous Claude agents** as the technology matures. Here is the roadmap:
+The specifications in this folder are designed to be promotable to **autonomous AI agents** as the technology matures. Here is the roadmap:
 
 #### Phase 1 (current): Specification-as-prompt
 The agent file is the system prompt. A human manually triggers each agent conversation.
@@ -261,7 +261,7 @@ CREATE TABLE tasks (
 Before deploying automated agent workflows, test manually:
 
 1. Fill in an input format completely
-2. Paste into Claude with just the agent spec file as context (no other skill files)
+2. Paste into AI with just the agent spec file as context (no other skill files)
 3. Evaluate output against the quality criteria in the agent file
 4. Score 1–5 on: accuracy, completeness, usability, format adherence
 5. Document any systematic weaknesses in the Quality Log section

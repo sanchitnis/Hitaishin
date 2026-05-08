@@ -31,7 +31,7 @@ profiles/
 cp profiles/_mentee-profile-template.md profiles/[your-first-name]-profile.md
 ```
 
-**Step 2**: Fill in the identity section with your coach or with Claude:
+**Step 2**: Fill in the identity section with your coach or with AI:
 ```
 Open my profile at profiles/[name]-profile.md and let's fill in the basics together
 ```
@@ -60,9 +60,9 @@ Your profile file contains personal information. You control it entirely. Option
 
 The `_mentee-profile-template.md` (with underscore prefix) is the only profile file that belongs in the public repository — it contains no personal data.
 
-### Sharing with Claude
+### Sharing with AI
 
-When you want Claude to coach you with full context, share your profile at the start of a session:
+When you want AI to coach you with full context, share your profile at the start of a session:
 
 ```
 Here is my coaching profile: [paste the content of your profile file]

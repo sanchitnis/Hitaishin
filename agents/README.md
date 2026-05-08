@@ -6,7 +6,7 @@
 
 ## What This Folder Contains
 
-Each file in `agents/` defines one **specialist coaching agent** — a focused coaching persona that Claude adopts when the conversation calls for a particular type of support. The master skill (`SKILL.md`) routes conversations to the right agent(s) based on what the user presents.
+Each file in `agents/` defines one **specialist coaching agent** — a focused coaching persona that AI adopts when the conversation calls for a particular type of support. The master skill (`SKILL.md`) routes conversations to the right agent(s) based on what the user presents.
 
 This is the **coaching methodology layer** — where the philosophical foundations from `references/` become coaching conversations.
 

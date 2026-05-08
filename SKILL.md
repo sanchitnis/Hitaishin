@@ -113,7 +113,7 @@ Read the relevant agent file before initiating any substantive coaching response
 ## Session Types and Agent Assignments
 
 **Tasking Convention**: In GTD task workflows, "Coach" means the AI coach agent
-(for example, Copilot, Claude, or Gemini), not a human coach.
+(for example, Copilot, AI, or Gemini), not a human coach.
 
 > **Full session protocols** (step-by-step process, skills developed, preconditions, optionality markers) are in `COACHING-SESSION-WORKFLOW.md`. This section defines routing logic only; load the workflow document when running a full session.
 
